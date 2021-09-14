@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title> Week 4: CSS 1 (Cascading Style Sheets) </title>
+  <!-- only links to the parent directory, not subdirectories -->
+  <link rel = "stylesheet" href = "style.css">
+
+</head>
+<body>
+  <section id = "top">
+  <h1> This is my top header </h1>
+  <ul style = "color:red">
+    <li> Coffee </li>
+    <li> Tea </li>
+      <ul>
+        <li> Black </li>
+        <li> Green </li>
+      </ul>
+  </ul>
+  </section>
+  <section id = "img">
+  <a href = "https://google.com"><img src = "img.jpg">
+  </section>
+  <section id = "input">
+  <form>
+    <label for="fname"> First name: </label><br>
+    <input type="text" name="fname"><br>
+    <label for="lname"> Last name: </label> <br>
+    <input type="text" name="lname"><br>
+    <input type="radio" id = "coffee" name="coffee"><label for = "coffee"> Coffee </label><br>
+    <input type="radio" id = "tea" name="tea"><label for = "tea"> Tea </label><br>
+    <input type="radio" id = "water" name="water"><label for = "water"> Water </label><br>
+
+<!-- Buttons -->
+    <button id = "submit"> Submit </button><br>
+  </form>
+
+  <a href = "#top"> Back to Top </a>
+  </section>
+</body>
+</html>
