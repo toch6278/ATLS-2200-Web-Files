@@ -1,0 +1,67 @@
+#top h1
+{
+  font-family: 'Poppins';
+  font-size: 30px;
+  color: white;
+  background-color: #DE6052;
+  background-size: contain;
+}
+h1
+{
+  font-size: 30 px;
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #DE6052;
+}
+h2
+{
+  font-size: 28 px;
+  font-family: 'Poppins';
+  font-weight: 640;
+}
+h3
+{
+  font-size: 26 px;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+#top img
+{
+ width: 50vw;
+ margin: 10px;
+}
+#assignments
+{
+  background-color: rgb(236,216,164);
+}
+#top h1
+{
+  border: solid 10 px rgb(232,231,231)
+}
+body
+{
+    font-family: garamond;
+    margin: 10px;
+}
+#assignments img
+{
+  width: 80vw;
+}
+#lab3 img
+{
+  width: 15vw;
+}
+#assignments ol
+{
+  font-size: 26 px;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+#nextpage
+{
+  font-size: 14px;
+  font-family: 'Poppins';
+  background-color: #DE6052;
+  color: white;
+  border-radius: 20px;
+}
