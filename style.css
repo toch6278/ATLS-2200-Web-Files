@@ -4,64 +4,85 @@
   font-size: 30px;
   color: white;
   background-color: #DE6052;
+  /* border: solid 10px #DE6052; */
   background-size: contain;
+  /* proportional padding from the edge of the margin */
+  padding: 0.5em;
 }
+
 h1
 {
-  font-size: 30 px;
+  font-size: 30px;
   font-family: 'Poppins';
   font-weight: bold;
   color: #DE6052;
 }
 h2
 {
-  font-size: 28 px;
+  font-size: 28px;
   font-family: 'Poppins';
   font-weight: 640;
 }
 h3
 {
-  font-size: 26 px;
+  font-size: 26px;
   font-family: 'Poppins';
   font-weight: 500;
 }
 #top img
 {
- width: 50vw;
+ width: 30vw;
+ /* height: 70vh; */
  margin: 10px;
 }
 #assignments
 {
   background-color: rgb(236,216,164);
-}
-#top h1
-{
-  border: solid 10 px rgb(232,231,231)
+  padding: 0.75em;
 }
 body
 {
     font-family: garamond;
-    margin: 10px;
+    margin: 30px;
+}
+#goals
+{
+  border: solid 5px #DE6052;
+  border-radius: 10px;
+  padding: 1em;
 }
 #assignments img
 {
-  width: 80vw;
-}
-#lab3 img
-{
   width: 15vw;
+  margin: 2px;
 }
 #assignments ol
 {
-  font-size: 26 px;
+  font-size: 20px;
   font-family: 'Poppins';
   font-weight: 500;
 }
-#nextpage
+#lab3
 {
   font-size: 14px;
   font-family: 'Poppins';
   background-color: #DE6052;
+  border-radius: 15px;
+  font-size: 16px;
   color: white;
-  border-radius: 20px;
+}
+/* #link
+{
+  color: white;
+} */
+/* #lab3 img
+{
+  width: 15vw;
+  margin: 2px;
+} */
+#end
+{
+  font-size: 14 px;
+  font-family: 'Poppins';
+  font-weight: lighter;
 }
