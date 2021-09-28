@@ -119,3 +119,8 @@ p.background
   font-family: 'Poppins';
   font-weight: lighter;
 }
+a:visited
+{
+  color: #DE6052;
+  /* color: #ECD8A4; */
+}
