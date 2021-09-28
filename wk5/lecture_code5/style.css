@@ -13,7 +13,7 @@ body
 /* change based on child tags */
 p
 {
-  color: rgb(100,100,100);
+  color: white;
   font-size: 20px;
 }
 
@@ -39,7 +39,7 @@ h2
 /* working with classes */
 .grey
 {
-  color: rgb(100,100,100);
+  background-color: rgb(100,100,100);
 }
 
 .background
@@ -50,7 +50,7 @@ h2
 /* target paragraphs that only have the class background */
 p.background
 {
-  color red;
+  color: red;
 }
 
 span
@@ -68,27 +68,27 @@ hr
 }
 #solid
 {
-  border: solid rgb magenta 2px;
+  border: solid magenta 2px;
 }
 #dotted
 {
-  border: dotted rgb magenta 2px;
+  border: dotted magenta 2px;
 }
 #dashed
 {
-  border: dashed rgb magenta 2px;
+  border: dashed magenta 2px;
 }
 #double
 {
-  border: double rgb magenta 2px;
+  border: double magenta 2px;
 }
 #ridge
 {
-  border: ridge rgb magenta 2px;
+  border: ridge magenta 2px;
 }
 #groove
 {
-  border: groove rgb magenta 2px;
+  border: groove magenta 2px;
 }
 
 #two
@@ -120,7 +120,7 @@ section{
   margin: -10px;
   padding: 0px;
   max-height: 25vh;
-  aspect ratio: 1; 
+  aspect ratio: 1;
   /* remove overflow and not try to squish everything in */
   overflow: clip;
 }

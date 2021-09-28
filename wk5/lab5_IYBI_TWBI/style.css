@@ -1,4 +1,4 @@
-#top h1
+#pagetop h1
 {
   font-family: 'Poppins';
   font-size: 30px;
@@ -9,48 +9,25 @@
   /* proportional padding from the edge of the margin */
   padding: 0.5em;
 }
-#header
-{
-  width: 100vw !important;
-  margin: -30px !important;
-  padding: 0px;
-  /* max-height: 30vh; */
-  aspect ratio: 1;
-  overflow: clip;
-}
-h1.header1
+
+h1
 {
   font-size: 30px;
   font-family: 'Poppins';
   font-weight: bold;
   color: #DE6052;
 }
-h2.header2
+h2
 {
   font-size: 28px;
   font-family: 'Poppins';
   font-weight: 640;
 }
-h3.header3
+h3
 {
   font-size: 26px;
   font-family: 'Poppins';
   font-weight: 500;
-}
-#grey
-{
-    border: solid #E8E7E7 5px;
-    background-color: solid #E8E7E7 5px;
-}
-#thin
-{
-  border: solid #E8E7E7 2px;
-  background-color: solid #E8E7E7 2px;
-}
-hr
-{
-  border: solid #ECD8A4 5px;
-  background-color: #ECD8A4;
 }
 #top img
 {
@@ -68,28 +45,18 @@ body
     font-family: garamond;
     margin: 30px;
 }
-p.background
-{
-  background-color: #E8E7E7;
-  padding: 50px;
-}
-/* #ridge
-{
-  border: ridge rgb(236,216,164) 2px;
-} */
 #goals
 {
   border: solid 5px #DE6052;
-  background-color: #F2F2F2;
   border-radius: 10px;
-  padding: 1.5em;
+  padding: 1em;
 }
 #assignments img
 {
   width: 15vw;
   margin: 2px;
 }
-#assignments ol
+#pagetop ol
 {
   font-size: 20px;
   font-family: 'Poppins';
