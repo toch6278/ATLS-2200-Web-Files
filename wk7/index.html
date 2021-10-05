@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title> Quote Machine </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans">
+</head>
+
+<body>
+  <section id = "quotesection">
+    <h1 id = "qtext"> Welcome to the Quote Machine. Click the button to get a quote. </h1>
+    <button id = "newquote"> New Quote </button>
+  </section>
+
+  <section id = "flex">
+    <!-- way to separate your sections -->
+    <div class = "flexitem">
+      <h2> one </h2>
+    </div>
+    <div class = "flexitem2">
+      <h2> two </h2>
+    </div>
+    <div class = "flexitem3">
+      <h2> three </h2>
+    </div>
+  </section>
+  <script>
+    //create an array, two different ways: constant or
+    //array is a way to store lots of information
+    const quotes = ["Wait for the Lord; be strong, and let your heart take courage; wait for the Lord!", "Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.", "It is in vain that you rise up early and go late to rest, eating the berad of anxious toil for he gives to his beloved sleep.", "I have said these things to you, that in me you have peace. In the world you will have tribulation. But take heart; I have overcome the world"];
+    //prints out the value in the given array
+    // console.log(quotes[2]);
+    //prints out number of arrays
+    console.log(quotes.length);
+
+    let quotecount = 0;
+    document.getElementById("newquote").addEventListener("click", buttonClicked);
+
+    /*
+    function buttonClicked()
+    {
+        // alert("button clicked");
+        //when we push the button, we are able to see the first quote in our array
+        console.log(quotes[quotecount]);
+
+        //add to quotecount everytime we run through the function
+        //can increment or decrement
+        quotecount++;
+
+        //if getting undefined and want to know why
+        console.log(quotecount);
+        //would eventually get undefined because calling something that doesn't exist
+    }
+    */
+    function buttonClicked()
+    {
+      console.log(quotes[quotecount]);
+      //change the header to each quote within the array
+      document.getElementById("qtext").innerHTML = quotes[quotecount];
+      if (quotecount >= 3)
+      {
+        quotecount = 0;
+      }
+      else {
+        quotecount++;
+      }
+      console.log(quotecount);
+    }
+  </script>
+</body>
+</html>

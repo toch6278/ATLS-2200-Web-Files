@@ -9,8 +9,10 @@
 
 <body>
   <section id = "top">
+    <h1 class = "header1"> ABOUT ME </h1>
     <img id = "header" alt = "Header Photo" src = "Assets/Diligence.jpg">
-    <h1 class = "header1"> Name Card </h1>
+    <br>
+    <h2 class = "header2"> Name Card </h2>
     <hr>
     <hr>
     <p> <strong> Name: </strong> Torshawna Chew (Torsh) </p>
@@ -24,9 +26,6 @@
   </section>
 
   <section id = "me">
-    <h1 class = "header1"> About Me </h1>
-    <hr>
-    <hr>
       <h2 class = "header2"> Description </h2>
       <p class = "background">
         I am a sophomore this year studying Creative Technology and Design. I'm planning on getting a minor in Engineering Entrepreneurship.
@@ -38,7 +37,7 @@
         How my parents chose my name is my dad really wanted to name my brother and I after the Chinese story 东山再起 <em> (make a comeback) </em>. And since I was born in the winter they used the words 冬<em>(winter)</em> 珊<em>(coral)</em>.
         For my English name, my parents liked the name <em> Shawna </em> and <em> Tor </em> sounded like our Chinese last name. So, they added <em> Tor </em> to the beginning of <em> Shawna </em> to create <strong> Torshawna </strong>.
       </p>
-      <h3 class = "header3"> Characteristics </h3>
+      <h4 class = "header4"> Characteristics </h4>
         <ul>
           <li> joyful - laughs A LOT, pretty contagious laugh </li>
           <li> organized </li>
@@ -47,7 +46,7 @@
           <li> easy-going </li>
           <li> introverted extrovert </li>
         </ul>
-      <h3 class = "header3"> Hobbies </h3>
+      <h4 class = "header4"> Hobbies </h4>
         <ul>
           <li> singing </li>
           <li> playing the piano and guitar </li>
@@ -56,7 +55,7 @@
           <li> napping </li>
           <li> watching movies and tv shows </li>
         </ul>
-      <h3 class = "header3"> Family </h3>
+      <h4 class = "header4"> Family </h4>
         <ol>
           <li> I have a younger brother, named Jacob, who is 15 years old. My brother and I are pretty close and share very many laughs. </li>
           <li> My mother's name is Jeanne and I enjoy talking to her about the Bible, Facetiming her, and learning how to cook from her. </li>
@@ -66,7 +65,7 @@
   </section>
 
   <section id = "goals">
-    <h1 class = "header1"> Goals for ATLS 2200 - Web </h1>
+    <h3 class = "header3"> Goals for ATLS 2200 - Web </h3>
     <hr>
     <hr>
       <ul>
@@ -80,15 +79,16 @@
       <br>
   </section>
   <section id = "assignments">
-    <h1 class = "header1"> Assignments </h1>
+    <h3 class = "header3"> Assignments </h3>
     <hr id = "grey">
     <hr id = "thin">
     <ol>
-      <li> <a href = "wk1/lab1_Hello_Me/index.html"> Lab 1 - Hello Me </a> </li>
+      <li> <a href = "wk1/lab1_Hello_Me/index.html"> Lab 1 - Hello Me </a> </li> <img class = "link" src = "Assets/link-icon.png" alt = "link icon"/>
       <li> Lab 2 - Encylopedia Page
         <h3> Disney Knowledge </h3>
         <a href = "https://www.google.com/search?q=disney+logo&rlz=1C1CHBF_enUS917US917&tbm=isch&source=iu&ictx=1&fir=gKR6wGEG-3RhFM%252CDUJCHvG5cezOCM%252C_&vet=1&usg=AI4_-kTOSQQ-k9R60DJ74zk4W4-dMJkWoQ&sa=X&ved=2ahUKEwjLha22q4TzAhWEnGoFHahoAV0Q9QF6BAgDEAE&biw=1536&bih=760&dpr=1.25#imgrc=gKR6wGEG-3RhFM">
           <img src = "Assets/disney-logo-evolution.jpg" alt = "Disney Logo Evolution"/> </a>
+          <img class = "link" src = "Assets/link-icon.png" alt = "link icon"/>
           <br>
         <form>
           <br>
@@ -101,7 +101,7 @@
         </form>
         <form action = "wk2/lab2_Encyclopedia_Page/index.html">
           <br>
-          <button id = "lab3"> Come learn! </button> <br>
+          <button id = "lab2"> Come learn! </button> <br>
           <br>
         </form>
       </li>
@@ -117,8 +117,16 @@
     <!-- </section> -->
   </section>
   <section id = "end">
-      <h2 class = "header2"> <a href = "#top"> Back to Top </a> </h2>
+      <h4 class = "header4"> <a href = "#top"> Back to Top </a> </h4>
   </section>
+  <script>
+    console.log("javascript is working");
+    document.getElementById("lab2").addEventListener("click", buttonClicked);
+    function buttonClicked()
+    {
+      alert("You will be taken to the following page");
+    }
+  </script>
 </body>
 
 </html>

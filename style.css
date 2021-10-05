@@ -1,7 +1,37 @@
 #top h1
 {
+  z-index: 1;
+  position: relative;
   font-family: 'Poppins';
   font-size: 30px;
+  color: #D1D1D1;
+  top: 15vh;
+  margin: 0 0 0 1vw;
+}
+
+#header
+{
+  width: 100vw !important;
+  position: relative;
+  margin: -30px !important;
+  padding: 0px;
+  bottom: 40px;
+  right: 40px;
+  /* max-height: 30vh; */
+  aspect ratio: 1;
+  overflow: hidden;
+}
+h1.header1
+{
+  font-size: 30px;
+  font-family: 'Poppins';
+}
+h2.header2
+{
+  font-size: 28px;
+  font-family: 'Poppins';
+  font-weight: 640;
+  /* font-weight: bold; */
   color: white;
   background-color: #DE6052;
   /* border: solid 10px #DE6052; */
@@ -9,31 +39,16 @@
   /* proportional padding from the edge of the margin */
   padding: 0.5em;
 }
-#header
-{
-  width: 100vw !important;
-  margin: -30px !important;
-  padding: 0px;
-  /* max-height: 30vh; */
-  aspect ratio: 1;
-  overflow: clip;
-}
-h1.header1
-{
-  font-size: 30px;
-  font-family: 'Poppins';
-  font-weight: bold;
-  color: #DE6052;
-}
-h2.header2
-{
-  font-size: 28px;
-  font-family: 'Poppins';
-  font-weight: 640;
-}
 h3.header3
 {
   font-size: 26px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #DE6052;
+}
+h4.header4
+{
+  font-size: 20px;
   font-family: 'Poppins';
   font-weight: 500;
 }
@@ -60,7 +75,7 @@ hr
 }
 #assignments
 {
-  background-color: rgb(236,216,164);
+  background-color: #EDE2C7;
   padding: 0.75em;
 }
 body
@@ -95,13 +110,38 @@ p.background
   font-family: 'Poppins';
   font-weight: 500;
 }
-#lab3
+button
 {
   font-size: 14px;
   font-family: 'Poppins';
-  background-color: #DE6052;
+  /* border: solid #ECD8A4 3px;  */
+  border: solid #D1D1D1 3px;
   border-radius: 15px;
   font-size: 16px;
+  color: #ECD8A4;
+  background-color: white;
+}
+/* link img
+{
+  width: 5vw;
+  margin: 1px;
+} */
+button:visited
+{
+  border: solid #D1D1D1 3px;
+  background-color: #DE6052;
+  color: #D1D1D1;
+}
+button:active
+{
+  border: solid #D1D1D1 3px;
+  background-color: #DE6052;
+  color: #D1D1D1;
+}
+button:hover
+{
+  border: solid #ECD8A4 3px;
+  background-color: #DE6052;
   color: white;
 }
 /* #link
@@ -123,4 +163,8 @@ a:visited
 {
   color: #DE6052;
   /* color: #ECD8A4; */
+}
+a:hover
+{
+  color: #D89790;
 }

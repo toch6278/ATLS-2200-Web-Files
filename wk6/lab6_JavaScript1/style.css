@@ -1,0 +1,103 @@
+h1
+{
+  font-family: 'Poppins';
+  /* font-family: 'Bebas+Neue'; */
+  font-size: 40px;
+}
+h2
+{
+  font-family: 'Poppins';
+  font-size: 26px;
+}
+h3
+{
+  font-family: 'Poppins';
+  font-size: 22px; 
+}
+#top h1
+{
+  color: white;
+  font-family: 'Poppins';
+  /* font-family: 'Bebas+Neue'; */
+  z-index: 1;
+  position: relative;
+  font-size: 5vw;
+  /* should be half way down the hero image */
+  top: 15vh;
+  margin: 0 0 0 2vw;
+  overflow: hidden;
+}
+#topimg
+{
+  /* width: 130vw; */
+  width: 95vw;
+  height: 80vh;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  bottom: 100px;
+  /* right: 100px; */
+  right: 80px;
+}
+
+#intro p
+{
+  background-color: #D1D1D1;
+}
+
+h2.header2
+{
+  color: #6F5592;
+}
+body
+{
+    font-family: garamond;
+    margin: 30px;
+}
+button
+{
+  font-size: 14px;
+  font-family: 'Poppins';
+  /* border: solid #ECD8A4 3px;  */
+  border: solid #D1D1D1 3px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #ECD8A4;
+  background-color: white;
+}
+/* link img
+{
+  width: 5vw;
+  margin: 1px;
+} */
+button:visited
+{
+  border: solid #D1D1D1 3px;
+  background-color: #DE6052;
+  color: #D1D1D1;
+}
+button:active
+{
+  border: solid #D1D1D1 3px;
+  background-color: #DE6052;
+  color: #D1D1D1;
+}
+button:hover
+{
+  border: solid #ECD8A4 3px;
+  background-color: #DE6052;
+  color: white;
+}
+a:link
+{
+  color: #6F5592;
+}
+a:visited
+{
+  color: #6F5592;
+  /* color: #ECD8A4; */
+}
+a:hover
+{
+  color: #D89790;
+}

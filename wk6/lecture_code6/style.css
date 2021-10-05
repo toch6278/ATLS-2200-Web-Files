@@ -1,0 +1,95 @@
+/* debugging process can be first changing the color of the paragraph  */
+body
+{
+  padding: 0px;
+  margin: 0px;
+}
+p
+{
+  color: red;
+  font-family: helvetica;
+}
+h1
+{
+  font-family: "Bebas+Neue";
+}
+h2
+{
+  font-family: "Bebas+Neue";
+}
+#one h1
+{
+  z-index: 1;
+  position: relative;
+  font-size: 5vw;
+  /* should be half way down the hero image */
+  top: 30vh;
+  margin: 0 0 0 7vw;
+}
+
+/* front to back on website */
+
+#heroimg
+{
+  width: 130vw;
+  /* clip image to the right position */
+  /* image is dependant on the current position it is in right now */
+  position: relative;
+  bottom: 400px;
+  right: 200px;
+}
+
+#one, #two, #three
+{
+  /* magazine typeset layout */
+  margin-left: 7vw;
+  /* typically have a larger margin on the right compared to the left */
+  margin-right: 3vw;
+}
+
+/* you would use divs if you want a section inside another section */
+div
+{
+  margin-top: 10vh;
+}
+
+button
+{
+  background-color: #ebbd34;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  margin: 10px;
+  padding: 7px 100px;
+  /* creating columns */
+  left: 50vw;
+}
+
+button:active
+{
+  background-color: blue;
+  color: white;
+}
+
+button:hover
+{
+  border: solid black 3px;
+}
+
+a:visited
+{
+  color: lightgrey;
+}
+a:link
+{
+  color: blue;
+}
+a:active
+{
+  color: red;
+}
+
+a:hover
+{
+  font-size: 200%;
+  color: red;
+}
