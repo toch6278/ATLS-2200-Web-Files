@@ -12,7 +12,7 @@ h2
 h3
 {
   font-family: 'Poppins';
-  font-size: 22px; 
+  font-size: 22px;
 }
 #top h1
 {
@@ -43,6 +43,8 @@ h3
 #intro p
 {
   background-color: #D1D1D1;
+  margin: 10px;
+  padding: 5em;
 }
 
 h2.header2
@@ -53,6 +55,36 @@ body
 {
     font-family: garamond;
     margin: 30px;
+}
+#southkorea
+{
+  font-size: 14px !important;
+  font-family: 'Poppins' !important;
+  /* border: solid #ECD8A4 3px;  */
+  border: solid #D1D1D1 3px !important;
+  border-radius: 15px !important;
+  font-size: 16px !important;
+  color: #ECD8A4 !important;
+  background-color: white !important;
+  padding: 3px !important;
+}
+a #southkorea:visited
+{
+  border: solid #D1D1D1 3px  !important;
+  background-color: #DE6052  !important;
+  color: #D1D1D1;
+}
+a #southkorea:active
+{
+  border: solid #D1D1D1 3px  !important;
+  background-color: #DE6052 !important;
+  color: #D1D1D1 !important;
+}
+a #southkorea:hover
+{
+  border: solid #ECD8A4 3px !important;
+  background-color: #DE6052 !important;
+  color: white !important;
 }
 button
 {
@@ -91,6 +123,7 @@ button:hover
 a:link
 {
   color: #6F5592;
+  /* font-family: 'Poppins'; */
 }
 a:visited
 {
@@ -100,4 +133,5 @@ a:visited
 a:hover
 {
   color: #D89790;
+  font-size: 30px;
 }

@@ -13,38 +13,60 @@
     </section>
 
     <section id = "intro">
-      <p> Come find the best places to vacation beyond your wildest dreams.
-      Depending on your preference of temperature, location, civilization, and many more</p>
+      <h2 class = "header2"> Introduction </h2>
+      <p>
+        Throughout the world, we are able to find an abundance of places to visit, things to see, cultures to learn about, and many more. From the tops of mountains to
+        the bottom of the sea, there are just so many possibilities to pinpoint where you, your family, or your significant other want to travel to. Vacation station is
+        here to help you customize your trip to the destination you want to travel to, the temperature you'd like to bask in, and what activities to experience.
+        <br>
+        Come find the best places to vacation beyond your wildest dreams.
+        Depending on your preference of temperature, location, civilization, and many more</p>
     </section>
     <section>
       <h2 class = "header2"> Locations </h2>
-      <h3> Walt Disney </h3>
-      <p> Take you beyond your wildest dreams  </p>
-      <button id = "disney"> United States </button>
+      <form action = "lab2_Encyclopedia_Page/index.html">
+        <p> Take you beyond your wildest dreams  </p>
+        <button id = "disney"> United States </button>
+      </form>
       <button id = "europe"> England </button>
-      <button id = "asia"> South Korea </button>
-      <button id = "africa"> Cape Town </button>
+      <!-- <button id = "africa"> Cape Town </button> -->
+      <a id = "southkorea" href = "https://www.planetware.com/south-korea/top-rated-tourist-attractions-in-south-korea-kor-1-4.htm"> South Korea </a>
     </section>
     <section id = "resources">
       <h2> Resources </h2>
       <p> Reitman, Matthew. “Italy Tops List of Luxury Destinations for 2017.” InsideHook, 6 Apr. 2019,
         <a href = "https://www.insidehook.com/article/travel/italy-tops-list-of-luxury-destinations-for-2017"> https://www.insidehook.com/article/travel/italy-tops-list-of-luxury-destinations-for-2017 </a>
       </p>
+      <p>
+        <a href = "https://www.planetware.com/south-korea/top-rated-tourist-attractions-in-south-korea-kor-1-4.htm"> https://www.planetware.com/south-korea/top-rated-tourist-attractions-in-south-korea-kor-1-4.htm </a>
+      </p>
+
+      <a href = "#top"> Back to Top </a>
     </section>
     <script>
       console.log("Javascript is working!");
       document.getElementById("disney").addEventListener("click", buttonClicked);
       document.getElementById("europe").addEventListener("click", buttonClicked);
-      document.getElementById("asia").addEventListener("click", buttonClicked);
-      document.getElementById("africa").addEventListener("click", buttonClicked);
+      document.getElementById("asia").addEventListener("click", asiaClicked);
+      // document.getElementById("africa").addEventListener("click", africaClicked);
       document.getElementById("resources").addEventListener("click", linkClicked);
       function buttonClicked()
+      {
+        alert("You'll be taken to the following page...");
+        document.getElementById("europe").innerHTML = "Coming soon!"
+      }
+      // function africaClicked()
+      // {
+      //   alert("You'll be taken to the following page...");
+      //   document.getElementById("africa").innerHTML = "No information yet...";
+      // }
+      function asiaClicked()
       {
         alert("You'll be taken to the following page...");
       }
       function linkClicked()
       {
-        alert("Going to place of citation!");
+        alert("Going to your site!");
       }
     </script>
   </body>
