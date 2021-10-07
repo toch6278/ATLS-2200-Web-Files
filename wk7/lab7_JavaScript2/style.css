@@ -8,6 +8,7 @@ hr
   margin: 30vh 20vw;
   /* padding: left and right, top and bottom */
   padding: 8vh 10vw 10vh 10vw;
+  border: solid #3684a3 5px;
   border-radius: 10px;
 }
 #VCterms
@@ -17,6 +18,10 @@ hr
   /* padding: left and right, top and bottom */
   padding: 8vh 10vw 10vh 10vw;
   border-radius: 10px;
+}
+body
+{
+  background-color: #EDE2C7;
 }
 button
 {
@@ -58,7 +63,10 @@ h2
   display: flex;
   margin: 150px;
 }
+img
+{
 
+}
 div
 {
   border: 1px solid black;
@@ -68,7 +76,7 @@ div
 /* can put icons, images, quotes */
 .flexitem
 {
-  flex-grow: 1;
+  flex-grow: 2;
 }
 .flexitem2
 {
@@ -76,5 +84,5 @@ div
 }
 .flexitem3
 {
-  flex-grow: 3;
+  flex-grow: 2;
 }
