@@ -1,0 +1,80 @@
+hr
+{
+  color: #EDE2C7;
+}
+#verses
+{
+  background-color: #EDE2C7;
+  margin: 30vh 20vw;
+  /* padding: left and right, top and bottom */
+  padding: 8vh 10vw 10vh 10vw;
+  border-radius: 10px;
+}
+#VCterms
+{
+  background-color: #9ac5d6;
+  margin: 30vh 20vw;
+  /* padding: left and right, top and bottom */
+  padding: 8vh 10vw 10vh 10vw;
+  border-radius: 10px;
+}
+button
+{
+  border-radius: 8px;
+  padding: 1vh 3vw;
+  /* float things to a certain position on your page. only works with blocks */
+  float: right;
+  margin-top: 1vh;
+  background-color: #37414f;
+  color: #e1e7f0;
+  font-family: "Open Sans";
+}
+button:hover
+{
+  border: #e1e7f0 solid 2px;
+}
+button:active
+{
+  color: #bec0c2;
+}
+
+h1
+{
+  color: #3684a3;
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 50px;
+  margin: 10vw;
+}
+h2
+{
+  color: #474641;
+  font-family: "EB Garamond";
+  font-weight: 200;
+}
+
+#flex
+{
+  display: flex;
+  margin: 150px;
+}
+
+div
+{
+  border: 1px solid black;
+  margin-left: 2vw;
+}
+/* how to identify a class, everything in the class will have the same characteristics */
+/* can put icons, images, quotes */
+.flexitem
+{
+  flex-grow: 1;
+}
+.flexitem2
+{
+  flex-grow: 2;
+}
+.flexitem3
+{
+  flex-grow: 3;
+}
