@@ -1,6 +1,8 @@
-hr
+#header
 {
-  color: #EDE2C7;
+  /* color: #EDE2C7; */
+  border: solid #FDEBE7 5px;
+  background-color: #FDEBE7;
 }
 #verses
 {
@@ -23,6 +25,7 @@ body
 {
   background-color: #EDE2C7;
 }
+
 button
 {
   border-radius: 8px;
@@ -65,11 +68,12 @@ h2
 }
 img
 {
-
+  width: 7vw;
+  margin: 5vw 5vh 5vw 5vh;
 }
 div
 {
-  border: 1px solid black;
+  border: 1px solid #EDE2C7;
   margin-left: 2vw;
 }
 /* how to identify a class, everything in the class will have the same characteristics */
