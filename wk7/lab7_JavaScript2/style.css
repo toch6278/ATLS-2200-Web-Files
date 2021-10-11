@@ -60,7 +60,14 @@ h2
   font-family: "EB Garamond";
   font-weight: 200;
 }
-
+h3
+{
+  color: #3684a3;
+  font-family: "Open Sans";
+  font-weight: 100px;
+  font-size: 20px;
+  margin: 5vw;
+}
 #flex
 {
   display: flex;
@@ -74,7 +81,7 @@ img
 div
 {
   border: 1px solid #EDE2C7;
-  margin-left: 2vw;
+  margin-left: 1.5vw;
 }
 /* how to identify a class, everything in the class will have the same characteristics */
 /* can put icons, images, quotes */
