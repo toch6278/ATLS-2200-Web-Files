@@ -1,0 +1,48 @@
+div
+{
+  background-color: pink;
+}
+
+#foods
+{
+  /* a way to add horizontal styling to your page */
+  display: flex;
+  margin-right: 3vw;
+}
+
+/* how to style a class */
+.options
+{
+  /* where all the columns are the same size */
+  flex-grow: 1;
+  width: auto;
+  margin: 3vw;
+}
+h2
+{
+  padding: 1em;
+  margin: auto;
+}
+img
+{
+  max-width: 25vw;
+  /* margin: auto; */
+  padding: 1em;
+  height: 30vh;
+  width: 25vw;
+  /* don't smoosh yourself up to fit, just crop */
+  object-fit: cover;
+  /* object-position: 0px 0px 20px 0px;  */
+}
+
+button
+{
+  float: right;
+  padding: 10px;
+  margin-right: 3vw;
+}
+.blue
+{
+  background-color: blue;
+  color: white;
+}
