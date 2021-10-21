@@ -1,19 +1,24 @@
-h1
+#top h2
 {
-  color: #6F5592;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 50px;
-  font-size: 50px;
-  margin-left: 37vw;
+  color: #D1D1D1;
+  font-family: 'Open Sans';
+  z-index: 1;
+  position: relative;
+  font-size: 5vw;
+  top: 15vh;
+  margin: 10vw 0vw 0vw 10vw;
+  overflow: hidden;
+  /* border: 2px solid #D89790; */
 }
-h3
+#topimg
 {
-  color: #6F5592;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 50px;
-  font-size: 30px;
-  margin-left: 27vw;
+  width: 130vw;
+  height: 100vh;
+  position: relative;
+  bottom: 400px;
+  right: 200px;
 }
+
 body
 {
   background-color: #EDE2C7;
@@ -25,34 +30,26 @@ body
   font-family: 'Open Sans', sans-serif;
   margin: 10vw;
 }
-#calendarH
+#icon
 {
-  color: #D89790;
-  font-weight: bold; 
-  font-size: 45px;
-  font-family: 'Open Sans', sans-serif;
-}
-#calendar
-{
-  margin: 10vw 10vw;
-  padding: 7em;
-  border: 8px solid #D1D1D1;
-  border-radius: 30px;
-  background-color: #E8E7E7;
+  display: flex;
+  border: 1px solid black;
+  margin: 10vw;
 }
 button
 {
   display: inline-block;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 45px;
   padding: 10px;
   background: #fff;
   border: 3px solid #6F5592;
+  border-radius: 7px;
   color: #6F5592;
   text-align: center;
-  font: 30px 'Open Sans', serif;
+  font: 12px 'Open Sans', serif;
   margin: 2vw 2vw;
+  margin-top: 2.5vw;
 }
 button:visited
 {
@@ -69,14 +66,28 @@ button:active
 button:hover
 {
   border: solid #6F5592 3px;
-  background-color: #D89790;
+  background-color: #6F5592;
   color: white;
+  font-weight: bold;
+  font-size: 18px;
+  height: 70px;
+
 }
-/* div
+
+#flex
 {
-  margin-left: 10px;
-  margin-bottom: 5px;
-} */
+  display: flex;
+  margin: 150px;
+}
+.flexitem
+{
+  flex-grow: 7;
+}
+.flexitem2
+{
+  flex-grow: 0.5;
+}
+
 .classes
 {
   color: #6F5592;
@@ -94,7 +105,7 @@ button:hover
   border-radius: 5px;
   margin: 1vw 10vw;
   padding: 1vw 1vw;
-  height: 10vh;
+  height: 15vh;
 }
 .free
 {
