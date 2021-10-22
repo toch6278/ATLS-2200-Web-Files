@@ -1,3 +1,11 @@
+#topline
+{
+  border: 7px solid #6F5592;
+}
+#bottomline
+{
+  border: 2px solid #6F5592;
+}
 h1
 {
   color: #6F5592;
@@ -11,7 +19,7 @@ h3
   color: #6F5592;
   font-family: 'Open Sans', sans-serif;
   font-weight: 50px;
-  font-size: 30px;
+  font-size: 40px;
   margin-left: 27vw;
 }
 body
@@ -28,14 +36,15 @@ body
 #calendarH
 {
   color: #D89790;
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 45px;
   font-family: 'Open Sans', sans-serif;
+  margin: 10vw 10vw;
 }
 #calendar
 {
   margin: 10vw 10vw;
-  padding: 7em;
+  padding: 5em;
   border: 8px solid #D1D1D1;
   border-radius: 30px;
   background-color: #E8E7E7;
@@ -104,4 +113,8 @@ button:hover
   border-radius: 5px;
   margin: 1vw 10vw;
   padding: 1em;
+}
+form
+{
+  display: inline;
 }

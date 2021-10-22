@@ -16,10 +16,15 @@
     <h2 id = "vtext"> <strong> Words of Encouragement! </strong> <br> Click the button to get a Bible Verse. </h2>
     <button id = "anotherVerse"> Another Verse </button>
   </section>
-
-  <section id = "VCterms">
-    <h2 id = "terms"> Let's study for <strong> Venture Capital </strong> together! <br> Click the button to test your knowledge. </h2>
-    <button id = "nextConcept"> Next Concept </button>
+  <section id = "studyVC">
+    <div id = "VCterms" class="flexVC">
+      <h2 id = "terms"> Let's study for <strong> Venture Capital </strong> together! <br> Click the button to test your knowledge. </h2>
+      <button id = "nextConcept"> Next Concept </button>
+    </div>
+    <div id = "VCanswers" class="flexVC2">
+      <h2 id = "answers"> Here are the corresponding answers <br> Click card to reveal </h2>
+      <button id = "conceptAnswer"> Reveal </button>
+    </div>
   </section>
   <section id = "flex">
     <h3> Resources </h3>
@@ -35,52 +40,6 @@
       <img src = "Assets/portfolio_icon.png" alt = "portfolio_icon">
     </div>
   </section>
-  <script>
-    console.log("javascript is working");
-
-    const verses = ["Wait for the Lord; be strong, and let your heart take courage; wait for the Lord!", "Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble.",
-    "It is in vain that you rise up early and go late to rest, eating the berad of anxious toil for he gives to his beloved sleep.", "I have said these things to you, that in me you have peace. In the world you will have tribulation. But take heart; I have overcome the world",
-    "If you are insulted for the name of Christ, you are blessed, because the Spirit of glory, and of God, rests upon you."];
-    console.log(verses.length);
-
-    let versecount = 0;
-    document.getElementById("anotherVerse").addEventListener("click", buttonClicked);
-
-    function buttonClicked()
-    {
-      console.log(verses[versecount]);
-      //change the header to each quote within the array
-      document.getElementById("vtext").innerHTML = verses[versecount];
-      if (versecount >= 4)
-      {
-        versecount = 0;
-      }
-      else {
-        versecount++;
-      }
-      console.log(versecount);
-    }
-
-    //Student Flashcards
-    const terms = ["preferred vs. common stock", "board of directors", "fiduciary duties", "Trados Case", "investment accelerators"];
-    console.log(terms.length);
-
-    let termCount = 0;
-    document.getElementById("nextConcept").addEventListener("click", newConcept);
-    function newConcept()
-    {
-      console.log(terms[termCount]);
-      //change the header to each quote within the array
-      document.getElementById("terms").innerHTML = terms[termCount];
-      if (termCount >= 3)
-      {
-        termCount = 0;
-      }
-      else {
-        termCount++;
-      }
-      console.log(termCount);
-    }
-  </script>
+  <script type="text/javascript" src = "index.js"></script>
 </body>
 </html>

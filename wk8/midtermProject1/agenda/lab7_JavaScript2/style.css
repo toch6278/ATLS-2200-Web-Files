@@ -13,12 +13,25 @@
   border: solid #3684a3 5px;
   border-radius: 10px;
 }
+#studyVC
+{
+  display: flex;
+  margin: 100px;
+}
 #VCterms
 {
   background-color: #9ac5d6;
-  margin: 30vh 20vw;
+  margin: 10vh 10vw;
   /* padding: left and right, top and bottom */
-  padding: 8vh 10vw 10vh 10vw;
+  padding: 5vh 10vw 10vh 10vw;
+  border-radius: 10px;
+}
+#VCanswers
+{
+  background-color: #9ac5d6;
+  margin: 10vh 0vw;
+  /* padding: left and right, top and bottom */
+  padding: 5vw 10vw ;
   border-radius: 10px;
 }
 body
@@ -80,11 +93,20 @@ img
 }
 div
 {
-  border: 1px solid #EDE2C7;
-  margin-left: 1.5vw;
+  /* border: 1px solid #EDE2C7; */
+  /* margin-left: 1.5vw; */
 }
 /* how to identify a class, everything in the class will have the same characteristics */
 /* can put icons, images, quotes */
+.flexVC
+{
+  flex-grow: 1;
+}
+.flexVC2
+{
+  flex-grow: 1;
+  /* border: 1px solid black; */
+}
 .flexitem
 {
   flex-grow: 2;
