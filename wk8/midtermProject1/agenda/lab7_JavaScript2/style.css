@@ -81,7 +81,7 @@ h3
   font-size: 20px;
   margin: 5vw;
 }
-#flex
+#flex,#flex3
 {
   display: flex;
   margin: 150px;
@@ -109,13 +109,30 @@ div
 }
 .flexitem
 {
-  flex-grow: 2;
+  flex-grow: 1;
 }
 .flexitem2
 {
-  flex-grow: 2;
+  flex-grow: 1;
 }
 .flexitem3
 {
-  flex-grow: 2;
+  flex-grow: 1;
+}
+
+.bottom
+{
+  color:#3684a3;
+  font-family: "Open Sans", serif;
+  font-size: 30px;
+  margin: 20vw;
+  padding: 7vw;
+}
+.part1
+{
+  flex-grow: 1;
+}
+.part2
+{
+  flex-grow: 1;
 }

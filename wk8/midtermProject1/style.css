@@ -37,9 +37,18 @@ body
 {
   color: #D89790;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 35px;
   font-family: 'Open Sans', sans-serif;
-  margin: 10vw 10vw;
+  margin: 5vw 5vw;
+}
+#date-time
+{
+  color: #D89790;
+  font-weight: bold;
+  font-size: 27px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 2vw 2vw;
+  /* margin-top: 30vw; */
 }
 #calendar
 {
@@ -117,4 +126,23 @@ button:hover
 form
 {
   display: inline;
+}
+
+#flex
+{
+  display: flex;
+  margin: 0vw 200px;
+  /* border: 1px solid; */
+}
+
+.flexitem
+{
+  flex-grow: 7;
+}
+
+.flexitem1
+{
+  flex-grow: 1;
+  margin: 6vw;
+  /* padding: 1em; */
 }

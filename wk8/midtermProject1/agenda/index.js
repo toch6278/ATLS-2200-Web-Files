@@ -1,6 +1,12 @@
-document.getElementById("finished").addEventListener('click', setActiveButton, false);
+console.log("working");
+
+document.getElementById("flash").addEventListener('click', setActiveButton, false);
 document.getElementById("free").addEventListener("click", buttonClicked);
 
+function setActiveButton()
+{
+  alert("Let's study!!");
+}
 
 function buttonClicked()
 {

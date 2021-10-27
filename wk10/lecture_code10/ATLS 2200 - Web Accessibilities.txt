@@ -1,0 +1,34 @@
+do the extra work to make the web accessible 
+who is web accessibility for? everyone 
+- captions are incredibility important for those that are hard of hearing 
+1. auditory: deaf individuals rely on captions and transcript 
+2. cognititive: conditions may cause diffiduclty focusing, processing, and understanding information 
+3. neurological: content that flickers, flashes, or blinks can trigger photosensitive epilepsy
+4. physical: motor functions prevent them to use mouse and keyboard; might use a joystick or a mouth stick to type
+5. speech: the volume or clarity of speech could make recognition difficult 
+6. visual: people who are blind use a screen reader and voiceover
+- with a keyboard, do you know where you are at all times? 
+
+Guidelines: 
+1. perceivable - perceive the content through another sense
+2. operable - operate with both a mouse and a keyboard 
+3. understandable - understood by a range of people 
+4. robust - work across multiple platforms and it needs to continue to work into the future as technology evolves 
+- some issues must be resolved - this level represents significant barriers that may not be overcome with workarounds 
+- some issues should be resolved
+- some issues could be resovled
+
+Code with Accessibility in Mind 
+- webpage title 
+- webiste semantic: headings structure, navigation 
+- links: descriptive -> read more vs. climate change full story 
+- alt text: image description, if the image was removed, would the user still get all the information from the page? 
+
+Design with accessibility in mind 
+- color contrast
+text wrapping - make sure you don't have to scroll horizontally and vertically to read text
+
+Resources: 
+Wave: can identify many accessibility and Web Content Accessibility Guideline (WCAG) erros
+Lighthouse: open-source, automated tool fro improving the quality of web pages, run against any web page, public or requiring 
+ 

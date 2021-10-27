@@ -1,41 +1,54 @@
+#top
+{
+  width: 98.8vw;
+  height: 50vh;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 50px;
+}
+
 #top h2
 {
   color: #D1D1D1;
+  /* color: white; */
   font-family: 'Open Sans';
   z-index: 1;
   position: relative;
-  font-size: 5vw;
-  top: 15vh;
-  margin: 10vw 0vw 0vw 10vw;
+  font: 5vw;
+  top: 20vh;
+  margin: 0vw 0vw 0vw 10vw;
   overflow: hidden;
   /* border: 2px solid #D89790; */
 }
-#topimg
+#top img
 {
   width: 130vw;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
-  bottom: 400px;
-  right: 200px;
+  bottom: 120px;
+  right: 100px;
 }
 
 body
 {
   background-color: #EDE2C7;
+  padding: 0px;
+  margin: 0px;
 }
 #date
 {
   color: #6F5592;
-  font-size: 45px;
+  font-size: 70px;
   font-family: 'Open Sans', sans-serif;
-  margin: 10vw;
+  margin: 0px;
 }
-#icon
+/* #icon
 {
   display: flex;
   border: 1px solid black;
   margin: 10vw;
-}
+} */
 button
 {
   display: inline-block;
@@ -71,13 +84,12 @@ button:hover
   font-weight: bold;
   font-size: 18px;
   height: 70px;
-
 }
 
-#flex
+#flex, #flex2, #flex3
 {
   display: flex;
-  margin: 0.5vw 10vw;
+  margin: 1vw 10vw;
 }
 .flexitem
 {
@@ -90,7 +102,7 @@ button:hover
 
 .classes
 {
-  color: #6F5592;
+  color: #E8E7E7;
   background-color: #D89790;
   border: solid #6F5592 2px;
   border-radius: 5px;
@@ -114,5 +126,22 @@ button:hover
   border: solid #6F5592 2px;
   border-radius: 5px;
   margin: 0.5vw 10vw;
-  padding: 1em;
+  /* margin-left: 1vw; */
+  padding: 0.5em;
+}
+.bottom
+{
+  color:#6F5592;
+  font-family: "Open Sans", serif;
+  font-size: 30px;
+  margin: 200vw;
+  padding: 7vw;
+}
+.part1
+{
+  flex-grow: 8;
+}
+.part2
+{
+  flex-grow: 1;
 }
