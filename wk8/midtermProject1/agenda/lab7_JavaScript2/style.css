@@ -58,7 +58,20 @@ button:active
 {
   color: #bec0c2;
 }
-
+a:link
+{
+  color: #6F5592;
+  /* font-family: 'Poppins'; */
+}
+a:visited
+{
+  color: #6F5592;
+  /* color: #ECD8A4; */
+}
+a:hover
+{
+  color: #D89790;
+}
 h1
 {
   color: #3684a3;

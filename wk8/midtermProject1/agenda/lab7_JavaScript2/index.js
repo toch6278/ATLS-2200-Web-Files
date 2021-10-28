@@ -66,17 +66,22 @@ let sites = ["https://github.com/toch6278/ATLS-2200-Web-Files", "https://www.lin
 for (i = 0; i < document.getElementsByClassName("icon").length; i++)
 {
   document.getElementsByClassName("icon")[i].addEventListener ("click", iconClicked, false);
+  //getting the id of the image
   document.getElementsByClassName("icon")[i].id = i;
   console.log(sites[i]);
 }
 function iconClicked(e)
 {
   // alert("You'll be taken to the following page...");
-  ref = e.target.id;
   //Resource:
   // https://developer.mozilla.org/en-US/docs/Web/API/Window/open
-  window.open(sites[ref]);
-  // window.open(page[dow] , '_blank');
+  if(e.target.tagName == "IMG"){
+    //click on the container whihc is the div
+    ref = e.target.parentNode.id;
+  }else{
+    ref = e.target.id;
+  }
+  window.open(sites[ref] , '_blank');
   //get id that triggers the event
 
 }

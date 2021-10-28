@@ -1,3 +1,11 @@
+#topline
+{
+  border: 7px solid #6F5592;
+}
+#bottomline
+{
+  border: 2px solid #6F5592;
+}
 h1
 {
   color: #6F5592;
@@ -32,7 +40,7 @@ h3
   display: flex;
   margin: 0vh 10vw 0 10vw;
   padding-top: 80px;
-  border: 1px solid #aaa;
+  border: 1px solid #DE6052;
   border-top: none;
 }
 .restaurants
@@ -48,12 +56,13 @@ h3
   flex-grow: 1;
   background-color: #EDE2C7;
   width: auto;
-  border: 1px solid black;
+  border: 1px solid #DE6052;
   background-color: #EAECEF;
 }
 #lunchfoods, #dinnerfoods, #desserts
 {
   display: none;
+  color: #DE6052;
 }
 .active
 {
@@ -76,7 +85,20 @@ img
   max-width: 50%;
   background-color: #EDE2C7;
 }
-
+a:link
+{
+  color: #6F5592;
+  /* font-family: 'Poppins'; */
+}
+a:visited
+{
+  color: #6F5592;
+  /* color: #ECD8A4; */
+}
+a:hover
+{
+  color: #D89790;
+}
 body
 {
   background-color: #EDE2C7;
@@ -84,6 +106,7 @@ body
 ul
 {
   font-family: "EB Garamond", serif;
+  color: #6F5592;
 }
 #flex3
 {
@@ -92,7 +115,7 @@ ul
 }
 .bottom
 {
-  color:#3684a3;
+  color: #3684a3;
   font-family: "Open Sans", serif;
   font-size: 30px;
   margin: 20vw;

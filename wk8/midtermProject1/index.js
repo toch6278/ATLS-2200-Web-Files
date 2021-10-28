@@ -17,8 +17,8 @@ function buttonClicked(e)
   dow = e.target.id;
   //Resource:
   // https://developer.mozilla.org/en-US/docs/Web/API/Window/open
-  window.open(page[dow]);
-  // window.open(page[dow] , '_blank');
+  // window.open(page[dow]);
+  window.open(page[dow] , '_self');
   //get id that triggers the event
 
 }

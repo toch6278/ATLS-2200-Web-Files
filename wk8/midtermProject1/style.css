@@ -90,6 +90,20 @@ button:hover
   background-color: #D89790;
   color: white;
 }
+a:link
+{
+  color: #6F5592;
+  /* font-family: 'Poppins'; */
+}
+a:visited
+{
+  color: #6F5592;
+  /* color: #ECD8A4; */
+}
+a:hover
+{
+  color: #D89790;
+}
 /* div
 {
   margin-left: 10px;
