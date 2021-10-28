@@ -1,3 +1,8 @@
+#top h1
+{
+  margin: 5vw 30vw;
+  font-size: 60px;
+}
 #header
 {
   /* color: #EDE2C7; */
@@ -7,29 +12,30 @@
 #verses
 {
   background-color: #EDE2C7;
-  margin: 30vh 20vw;
+  margin: 5vh 30vw;
   /* padding: left and right, top and bottom */
-  padding: 8vh 10vw 10vh 10vw;
+  padding: 10vh 10vw 10vh 10vw;
   border: solid #3684a3 5px;
   border-radius: 10px;
 }
 #studyVC
 {
   display: flex;
-  margin: 100px;
+  margin: 1vw;
+  padding: 0.5vw;
 }
 #VCterms
 {
   background-color: #9ac5d6;
-  margin: 10vh 10vw;
+  margin: 5vh 3vw;
   /* padding: left and right, top and bottom */
-  padding: 5vh 10vw 10vh 10vw;
+  padding: 5vw 10vw;
   border-radius: 10px;
 }
 #VCanswers
 {
   background-color: #9ac5d6;
-  margin: 10vh 0vw;
+  margin: 5vh 3vw;
   /* padding: left and right, top and bottom */
   padding: 5vw 10vw ;
   border-radius: 10px;
@@ -92,12 +98,18 @@ h3
   font-family: "Open Sans";
   font-weight: 100px;
   font-size: 20px;
-  margin: 5vw;
+  margin-left: 10vw;
+  margin-top: 7vw;
 }
-#flex,#flex3
+#flex
 {
   display: flex;
-  margin: 150px;
+  margin: 3vw 15vw;
+}
+#flex3
+{
+  display: flex;
+  margin: 3vw 25vw;
 }
 img
 {

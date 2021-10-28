@@ -39,8 +39,8 @@ h3
 {
   display: flex;
   margin: 0vh 10vw 0 10vw;
-  padding-top: 80px;
-  border: 1px solid #DE6052;
+  /* padding-top: 80px; */
+  border: 2px solid #D89790;
   border-top: none;
 }
 .restaurants
@@ -54,19 +54,18 @@ h3
 .meal
 {
   flex-grow: 1;
-  background-color: #EDE2C7;
   width: auto;
-  border: 1px solid #DE6052;
+  border: 2px solid #D89790;
   background-color: #EAECEF;
 }
 #lunchfoods, #dinnerfoods, #desserts
 {
   display: none;
-  color: #DE6052;
+  color: #D89790;
 }
 .active
 {
-  background-color: white;
+  background-color: #EDE2C7;
   border-bottom: none;
 }
 img
@@ -76,6 +75,7 @@ img
   object-fit: cover;
   display: block;
   margin: auto;
+  margin-top: 5vw;
 }
 
 #image, .menu
@@ -101,17 +101,18 @@ a:hover
 }
 body
 {
-  background-color: #EDE2C7;
+  background-color: #D1D1D1;
 }
 ul
 {
   font-family: "EB Garamond", serif;
   color: #6F5592;
+  margin: 2vw;
 }
 #flex3
 {
   display: flex;
-  margin: 150px;
+  margin: 3vw 20vw;
 }
 .bottom
 {
@@ -128,4 +129,10 @@ ul
 .part2
 {
   flex-grow: 1;
+}
+
+#togo, #home, #restaurants
+{
+  /* margin: 1vw; */
+  padding: 1vw;
 }

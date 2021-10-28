@@ -1,5 +1,8 @@
 console.log("hello world!");
 
+// Resources: Lecture Code Week 9 
+// referenced week 9 code to write javascript and utilized Casey's office hours
+
 // document.getElementById("day").addEventListener("click", buttonClicked);
 document.getElementById("nothing").addEventListener("click", activeProgress);
 // document.getElementsByClassName("day").addEventListener("click", buttonClicked);
@@ -15,7 +18,7 @@ function buttonClicked(e)
 {
   // alert("You'll be taken to the following page...");
   dow = e.target.id;
-  //Resource:
+  //Resource: used to change between different htmls and open in the same window or a separate window
   // https://developer.mozilla.org/en-US/docs/Web/API/Window/open
   // window.open(page[dow]);
   window.open(page[dow] , '_self');
@@ -32,22 +35,6 @@ function activeProgress()
   document.getElementById("nothing").style.fontFamily = "Open Sans";
 }
 
-// -------------------------------------------------------------------------------
-
-//testing button pop up
-// let unplanned = ["24", "25", "26", "27", "28", "29", "30"];
-// for (i = 0; i < document.getElementsByClassName("soon").length; i++)
-// {
-//   console.log(unplanned[i]);
-//   document.getElementsByClassName("soon")[i].innerHTML = unplanned[i];
-//   document.getElementsByClassName("soon")[i].addEventListener("click", setActive, false);
-//   document. getElementsByClassName("soon")[i].id = unplanned[i];
-// }
-//
-// function setActive(c)
-// {
-//   if (c.target.)
-// }
 
 var dt = new Date();
 document.getElementById("date-time").innerHTML = dt;

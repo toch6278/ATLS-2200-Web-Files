@@ -21,6 +21,7 @@ h3
   font-weight: 50px;
   font-size: 40px;
   margin-left: 27vw;
+  margin-top: 1vw;
 }
 body
 {
@@ -37,22 +38,22 @@ body
 {
   color: #D89790;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'Open Sans', sans-serif;
-  margin: 5vw 5vw;
+  margin: 2vw 2vw;
 }
 #date-time
 {
   color: #D89790;
   font-weight: bold;
-  font-size: 27px;
+  font-size: 20px;
   font-family: 'Open Sans', sans-serif;
-  margin: 2vw 2vw;
+  margin: 2vw 1vw;
   /* margin-top: 30vw; */
 }
 #calendar
 {
-  margin: 10vw 10vw;
+  margin: 1vw 10vw;
   padding: 5em;
   border: 8px solid #D1D1D1;
   border-radius: 30px;
@@ -145,18 +146,19 @@ form
 #flex
 {
   display: flex;
-  margin: 0vw 200px;
+  margin: 2vw 230px;
   /* border: 1px solid; */
 }
 
 .flexitem
 {
-  flex-grow: 7;
+  flex-grow: 8;
+  margin-left: 2vw;
 }
 
 .flexitem1
 {
-  flex-grow: 1;
-  margin: 6vw;
+  flex-grow: 0.5;
+  margin: 1vw 12vw;
   /* padding: 1em; */
 }

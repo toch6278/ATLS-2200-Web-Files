@@ -1,5 +1,8 @@
 console.log("javascript is working");
 
+// Resources: Lecture Code Week 7 and 9 
+// referenced week 9 code to write javascript and utilized Casey's office hours
+
 const verses = ["Wait for the Lord; be strong, and let your heart take courage; wait for the Lord! ~ Psalm 27:14", "Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble. ~ Matthew 6:34",
 "It is in vain that you rise up early and go late to rest, eating the berad of anxious toil for he gives to his beloved sleep. ~ Psalm 127:2", "I have said these things to you, that in me you have peace. In the world you will have tribulation. But take heart; I have overcome the world ~ John 16:33",
 "If you are insulted for the name of Christ, you are blessed, because the Spirit of glory, and of God, rests upon you. ~ 1 Peter 4:14"];
@@ -73,7 +76,7 @@ for (i = 0; i < document.getElementsByClassName("icon").length; i++)
 function iconClicked(e)
 {
   // alert("You'll be taken to the following page...");
-  //Resource:
+  //Resource: used to change between different htmls and open in the same window or a separate window
   // https://developer.mozilla.org/en-US/docs/Web/API/Window/open
   if(e.target.tagName == "IMG"){
     //click on the container whihc is the div

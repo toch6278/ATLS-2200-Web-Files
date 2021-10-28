@@ -130,7 +130,7 @@ a:hover
   border-radius: 5px;
   margin: 0.5vw 10vw;
   padding: 1vw 1vw;
-  height: 15vh;
+  /* height: 15vh; */
 }
 .free
 {
@@ -140,7 +140,7 @@ a:hover
   border-radius: 5px;
   margin: 0.5vw 10vw;
   /* margin-left: 1vw; */
-  padding: 0.5em;
+  padding: 1vw 1vw;
 }
 .bottom
 {
