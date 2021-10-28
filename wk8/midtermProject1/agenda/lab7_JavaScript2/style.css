@@ -66,17 +66,20 @@ button:active
 }
 a:link
 {
-  color: #6F5592;
+  color: #3684A3;
   /* font-family: 'Poppins'; */
 }
 a:visited
 {
-  color: #6F5592;
+  color: #3684A3;
   /* color: #ECD8A4; */
 }
 a:hover
 {
   color: #D89790;
+  /* resources: utilized website to create a shadow to the "back to calendar" and "back to top" links
+  https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/ */
+  text-shadow: -2px 2px 2px #BEC0C2;
 }
 h1
 {
@@ -98,7 +101,7 @@ h3
   font-family: "Open Sans";
   font-weight: 100px;
   font-size: 20px;
-  margin-left: 10vw;
+  margin: 0vw 10vw 0vw 10vw;
   margin-top: 7vw;
 }
 #flex
@@ -109,7 +112,7 @@ h3
 #flex3
 {
   display: flex;
-  margin: 3vw 25vw;
+  margin: 3vw 32vw;
 }
 img
 {
@@ -132,15 +135,16 @@ div
   flex-grow: 1;
   /* border: 1px solid black; */
 }
-.flexitem
+#flexitem
+{
+  flex-grow: 1;
+  margin: 0vw 5vw;
+}
+#flexitem2
 {
   flex-grow: 1;
 }
-.flexitem2
-{
-  flex-grow: 1;
-}
-.flexitem3
+#flexitem3
 {
   flex-grow: 1;
 }
@@ -150,14 +154,25 @@ div
   color:#3684a3;
   font-family: "Open Sans", serif;
   font-size: 30px;
-  margin: 20vw;
-  padding: 7vw;
+  margin: 2vw;
+  padding: 2vw;
 }
 .part1
 {
   flex-grow: 1;
+  font-size: 22px;
 }
 .part2
 {
   flex-grow: 1;
+  font-size: 22px;
+}
+#bottomH
+{
+  color: #37414F;
+  margin: 10vw 4vw 0vw 42vw;
+  padding-bottom: 0;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
 }

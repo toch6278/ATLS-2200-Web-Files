@@ -1,6 +1,6 @@
 console.log("hello world!");
 
-// Resources: Lecture Code Week 9 
+// Resources: Lecture Code Week 9
 // referenced week 9 code to write javascript and utilized Casey's office hours
 
 // document.getElementById("day").addEventListener("click", buttonClicked);

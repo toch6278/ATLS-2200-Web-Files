@@ -1,6 +1,6 @@
 console.log("javascript is working");
 
-// Resources: Lecture Code Week 7 and 9 
+// Resources: Lecture Code Week 7 and 9
 // referenced week 9 code to write javascript and utilized Casey's office hours
 
 const verses = ["Wait for the Lord; be strong, and let your heart take courage; wait for the Lord! ~ Psalm 27:14", "Therefore do not be anxious about tomorrow, for tomorrow will be anxious for itself. Sufficient for the day is its own trouble. ~ Matthew 6:34",
@@ -36,6 +36,14 @@ let termCount = 0;
 let answerCount = 0;
 document.getElementById("nextConcept").addEventListener("click", newConcept);
 document.getElementById("conceptAnswer").addEventListener("click", conceptAnswer);
+
+//flip through cards respective to each other
+//if the user clicks through the new concepts and forget to reveal the answer, the concept answers will change with the new concept
+// if (termCount != answerCount)
+// {
+//   answerCount = termCount;
+// }
+
 function newConcept()
 {
   console.log(terms[termCount]);
