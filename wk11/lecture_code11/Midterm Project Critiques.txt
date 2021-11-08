@@ -1,0 +1,45 @@
+- if I were to continue working on this project, I would definitely look into a more compact way
+- how to work with random better 
+Celine
+I really liked the use of javascript and how she was able to figure out how to do that
+information was clean and compact, really like the display 
+I wonder how the javascript for the different displays worked
+
+Vikki
+I liked the simplicity of the site. It was a cool way to see how the complexity of her site was just through the random names 
+I wished to see more of her ideation and code rather than a walk through 
+I wonder how she incorporated the random generator because it seemed she used something more complex compared to an array
+
+Grant
+I liked how he customized the date with the flashing
+I wish there was more information to the idea behind his idea,
+I also wish the information wasn't just bunched up in the top left hand corner
+- thinking into web accessibility 
+I wonder how he was able to get the flashing to his date
+
+karina
+I liked how the display was you could find out what the models were wearing to match
+
+Jack 
+I liked the color pallete that he chose and how he incorporated the weather for that day 
+I wish that the days were a little larger, hard to see 
+I wonder how much complexity went into the display 
+
+Yubin/Sally  
+I really liked the inbox shadow - tried to figure it out myself and the display of everything
+I wonder what was the reason behind the designs she made
+I wish 
+
+Sav 
+I liked the way she incorporated inside jokes 
+I wish the boxes were the same size since the sizes varied and more centered 
+I wonder how she was able incorporate a picture slideshow
+
+Jasmine
+I like the playful look to the to do list and the style that she went with
+I wish to see more information displayed because it seemed a little empty
+
+Samar
+I like the presentation and the idea behind his self care menu and how 
+I wish there was more styling and margin to the display b
+I wonder what the inspiration behind the project and where these memes came to surface
