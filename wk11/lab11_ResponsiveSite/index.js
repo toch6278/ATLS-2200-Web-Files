@@ -1,4 +1,6 @@
 console.log("Javascript is working!");
+
+
 document.getElementById("disney").addEventListener("click", buttonClicked);
 document.getElementById("europe").addEventListener("click", buttonClicked);
 document.getElementById("asia").addEventListener("click", asiaClicked);

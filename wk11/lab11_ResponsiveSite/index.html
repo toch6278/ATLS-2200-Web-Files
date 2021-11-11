@@ -11,7 +11,11 @@
       <h1> Vacation Station </h1>
       <img alt = "Vacation Photo" src = "Assets/travel-photo.jpg" id = "topimg">
     </section>
-
+    <nav>
+      <a href="index.html" class="active" id = "tab1"> Home </a>
+      <a href="calendar.html" id = "tab2"> Calendar </a>
+      <a href="contact.html" id = "tab3"> Contact </a>
+    </nav>
     <section id = "intro">
       <h2 class = "header2"> Introduction </h2>
       <p>
@@ -22,44 +26,59 @@
         Come find the best places to vacation beyond your wildest dreams.
         Depending on your preference of temperature, location, civilization, and many more</p>
     </section>
-    <section>
+    <section id= "middle">
       <h2 class = "header2"> Locations </h2>
-
-      <form action = "lab2_Encyclopedia_Page/index.html">
-        <p> Take you beyond your wildest dreams  </p>
-        <button id = "disney"> United States </button>
-      </form>
-      <div>
-        <button id = "europe"> England </button>
+      <div id = "flexer">
+        <div id = "adventure">
+          <img alt = "adventure" src = "Assets/adventure.jpg">
+        </div>
+        <div id = "places">
+          <form action = "lab2_Encyclopedia_Page/index.html">
+            <p> Take you beyond your wildest dreams  </p>
+            <button id = "disney"> United States </button>
+          </form>
+          <div>
+            <button id = "europe"> England </button>
+          </div>
+          <!-- <button id = "africa"> Cape Town </button> -->
+          <form action = "https://www.planetware.com/south-korea/top-rated-tourist-attractions-in-south-korea-kor-1-4.htm">
+            <button id = "asia"> South Korea </button>
+          </form>
+        </div>
       </div>
-      <!-- <button id = "africa"> Cape Town </button> -->
-      <form action = "https://www.planetware.com/south-korea/top-rated-tourist-attractions-in-south-korea-kor-1-4.htm">
-        <button id = "asia"> South Korea </button>
-      </form>
-
     </section>
     <section id = "resources">
       <h2> Resources </h2>
-      <p> Reitman, Matthew. “Italy Tops List of Luxury Destinations for 2017.” InsideHook, 6 Apr. 2019,
-        <a href = "https://www.insidehook.com/article/travel/italy-tops-list-of-luxury-destinations-for-2017"> https://www.insidehook.com/article/travel/italy-tops-list-of-luxury-destinations-for-2017 </a>
+      <p>
+        <a href = "https://www.insidehook.com/article/travel/italy-tops-list-of-luxury-destinations-for-2017"> Reitman, Matthew. “Italy Tops List of Luxury Destinations for 2017.” InsideHook, 6 Apr. 2019" </a>
       </p>
       <p>
-        <a href = "https://www.planetware.com/south-korea/top-rated-tourist-attractions-in-south-korea-kor-1-4.htm"> https://www.planetware.com/south-korea/top-rated-tourist-attractions-in-south-korea-kor-1-4.htm </a>
+        <a href = "https://www.planetware.com/south-korea/top-rated-tourist-attractions-in-south-korea-kor-1-4.htm"> “17 Top-Rated Tourist Attractions in South Korea: Planetware.” PlanetWare.com" </a>
+      </p>
+      <p>
+        <a href = "https://www.google.com/search?q=adventure+photos&rlz=1C1CHBF_enUS917US917&tbm=isch&source=iu&ictx=1&fir=czIezu-ZFVmWPM%252CQmZfkzV4EpA7HM%252C_%253BCBvFhb8lVIInOM%252Cx2ZteDOQoFY42M%252C_%253BT-viBD92qG479M%252C2-w6eyquC4zBtM%252C_%253BrEqQ94fCztR0qM%252C1xxSYBYlsQojUM%252C_%253B55p-qKw6JVURXM%252CBGPEnYmOEk1aPM%252C_%253BmKcE1Y5SfxRsNM%252CijrOACOVlK7yAM%252C_%253BZNmNHQxdx00j1M%252CijrOACOVlK7yAM%252C_%253BUfIQtkovz-jFgM%252C48WX307g9qjNUM%252C_%253BKLtMg8XuQfHhJM%252CBGPEnYmOEk1aPM%252C_%253BbhzRQYyY57XVcM%252CuOrshF1zPEE0XM%252C_%253BWxkge65ql05DRM%252CQmZfkzV4EpA7HM%252C_%253BuNfFImjzKIA8hM%252C48WX307g9qjNUM%252C_%253Ba5h8AC4C5y7ftM%252C_hNzxcWbeIUxyM%252C_&vet=1&usg=AI4_-kSWGNEjnY_TUGVDL7XAaMX0pWmVnQ&sa=X&ved=2ahUKEwiRmtHKwJH0AhVxlWoFHQKpDvUQ9QF6BAgMEAE#imgrc=rEqQ94fCztR0qM"> “Adventure Images ShutterStock.” Google Search, Google" </a>
+      </p>
+      <p>
+        <a href = "https://www.w3schools.com/css/css3_mediaqueries_ex.asp"> “CSS Media Queries - Examples.” CSS3 Media Queries - Examples"</a>
       </p>
       <a href = "#top"> Back to Top </a>
     </section>
     <section id = "flex">
-      <h3> More Info </h3>
+      <div class = "fe2">
+        <h3> More Info </h3>
+      </div>
       <hr>
       <!-- way to separate your sections -->
-      <div class = "icon" id = "flexitem">
-        <img src = "Assets/github_icon.png" alt = "github_icon">
-      </div>
-      <div class = "icon" id = "flexitem2">
-        <img src = "Assets/linkedin_icon.png" alt = "linkedin_icon">
-      </div>
-      <div class = "icon" id = "flexitem3">
-        <img src = "Assets/portfolio_icon.png" alt = "portfolio_icon">
+      <div class = "fe2" id = "icons">
+        <div class = "icon" id = "flexitem">
+          <img src = "Assets/github_icon.png" alt = "github_icon">
+        </div>
+        <div class = "icon" id = "flexitem2">
+          <img src = "Assets/linkedin_icon.png" alt = "linkedin_icon">
+        </div>
+        <div class = "icon" id = "flexitem3">
+          <img src = "Assets/portfolio_icon.png" alt = "portfolio_icon">
+        </div>
       </div>
     </section>
     <script type="text/javascript" src = "index.js"></script>
