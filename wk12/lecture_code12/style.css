@@ -1,0 +1,19 @@
+h1
+{
+  font-family: "Merriweather";
+}
+
+body
+{
+  /* h1 is more specific in a tag */
+  font-family: fantasy !important;
+}
+#section1
+{
+  font-family: "Arial";
+}
+/* this will override the first h1 style */
+/* h1
+{
+  font-family: cursive;
+} */
