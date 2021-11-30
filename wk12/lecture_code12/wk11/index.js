@@ -9,12 +9,12 @@ document.getElementById('portfolio').innerHTML += "<div class = 'pimage'><img sr
 }
 
 let displaydetails = false;
-document.getElementById('portfolio').addEeventListener("click", showDetails);
+document.getElementById('portfolio').addEventListener("click", showDetails);
 
-fundtion showDetails(){
+function showDetails(){
   document.getElementById('details').style.display = "block";
-  document.getElementById('detailoverlay').style.display = "block";
-  document.getElementById('detailsoverlay').addEeventListener('click', clickedOverlay);
+  document.getElementById('detailsoverlay').style.display = "block";
+  document.getElementById('detailsoverlay').addEventListener('click', clickedOverlay);
   displaydetails = true;
 }
 
@@ -22,5 +22,5 @@ function clickedOverlay()
 {
   document.getElementById('details').style.display = "block";
   document.getElementById('detailoverlay').style.display = "none";
-  displaydetails = false; 
+  displaydetails = false;
 }

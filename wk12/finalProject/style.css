@@ -1,0 +1,228 @@
+@media screen and (min-width:800px){
+  #ppic1 img{
+    display:block;
+  }
+
+  nav a{
+    font-size: 20px;
+  }
+
+  #projects
+  {
+    display: grid;
+    grid-auto-rows: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "header one"
+    "two three"
+    "four five";
+  }
+}
+
+@media screen and (max-width:801px){
+  #ppic1 img{
+    /* display:none; */
+  }
+
+  nav a{
+    font-size: 15px;
+  }
+
+  #projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "one"
+    "two"
+    "three"
+    "four";
+  }
+}
+
+body
+{
+  background-color: #eae3d8;
+}
+.top
+{
+  background-color: #659c97;
+  /* height: 20vh; */
+}
+h1
+{
+  font-size: 7vw;
+  /* margin: 10vw 30vw; */
+  /* padding: 1em; */
+  text-align: center;
+  color: #dac4a0;
+}
+h2
+{
+  font-size: 5vw;
+  display: inline;
+  /* margin: 25vw; */
+  text-align: center;
+  color: #dac4a0;
+}
+nav
+{
+  display:flex;
+  width: 50vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto 50px calc(100% - 70vw);
+}
+nav a
+{
+  font-size: 20px;
+  padding: 1em;
+  text-align: center;
+}
+section.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #eae3d8;
+  width: 100%;
+  height: 50%;
+  padding: 0;
+  margin: 0vw;
+}
+a:link
+{
+  display: inline;
+  color: #659c97;
+  /* margin: 0vw 10vw; */
+  font-family: 'Open+Sans';
+}
+a:visited
+{
+  color: #659c97;
+  /* color: #ECD8A4; */
+}
+a:hover
+{
+  color: #659c97;
+}
+
+#activity
+{
+  text-align: center;
+}
+
+iframe
+{
+  margin: 2vw;
+}
+#profilepic
+{
+  background-color: white;
+  border-radius: 30px;
+  padding: 1em;
+  margin: 4vw;
+  display: flex;
+}
+#profilepic img
+{
+  width: 42vh;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 30px;
+  padding: 1em;
+}
+#ppic1
+{
+  flex-grow: 5;
+}
+#ppic2
+{
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+#projects img
+{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.pimg
+{
+  /* div behind image is black and then you just change the opacity of the image */
+  background-color: #659c97;
+  transition: border-radius 0.5s;
+  width: 50.5vw;
+}
+.pimg:hover
+{
+  border-radius: 100px 100px 100px 10px;
+}
+.pimg img{
+  /* write transition on default state */
+  /* only writing transition specificity for opacity  */
+  transition: opacity 0.5s ease-in, border-radius 0.5s;
+}
+.pimg:hover img, iframe:hover{
+  /* 50% opaque/transparent */
+  opacity: .5;
+  border: 4px #dac4a0 solid;
+  border-radius: 100px;
+}
+
+.top img
+{
+  width: 10vw;
+  /* height: 5vh; */
+  margin: 10vw;
+}
+.contact
+{
+  background-color: #398b85;
+  border-radius: 30px;
+  padding: 1em;
+  margin: 4vw;
+}
+.contact h2
+{
+  margin: 3vw 4vw;
+  /* text-align: center; */
+}
+.contact p
+{
+  background-color: #eae3d8;
+  font-size: 10px;
+  font-family: sans-serif;
+  opacity: 50%;
+  height: 10vh;
+  padding: 2vw;
+  border-radius: 10px;
+}
+.icons
+{
+  margin: 20vw;
+  width: 4vw;
+  height: 4vw;
+  align-items: center;
+}
+#flex
+{
+  display: flex;
+  /* display: inline; */
+  /* margin-left: 5vw;  */
+}
+#topflex
+{
+  display: flex;
+}
+#topflex, #header
+{
+  flex-grow: 2;
+
+}
+#flexitem, #flexitem1, #flexitem2, #flexitem3
+{
+  flex-grow: 2;
+}
