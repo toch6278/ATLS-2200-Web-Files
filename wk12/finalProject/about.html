@@ -9,7 +9,12 @@
   <body>
     <section class = "top" id = "topflex">
       <!-- <img id = "fleximg" src = "assets/personalLogo_icon.png" alt = "Personal Logo"> -->
-      <h1 id = "header"> ABOUT ME </h1>
+      <div id = flexitem>
+        <img src = "assets/personalLogo_icon.png" alt = "Personal Logo">
+      </div>
+      <div id = "flexitem1">
+        <h1 id = "header"> ABOUT ME </h1>
+      </div>
     </section>
     <section class = "tabs sticky">
       <nav>
@@ -32,7 +37,13 @@
     </section>
     <section class = "contact">
       <h2> CONTACT </h2>
-      <p> If have any questions or want to get in contact, please leave me a note or reach me at any of my social pages.</p>
+      <div>
+        <label for  = "name"> Name: </label> <br>
+        <input type = "text" id = "name">
+      </div>
+      <div>
+        <input type = "text" id = "note" value = "If have any questions or want to get in contact, please leave me a note or reach me at any of my social pages.">
+      </div>
         <!-- <div class = "fe2" id = "icons"> -->
       <div id = "flex" >
         <div class = "icon" id = "flexitem">
@@ -47,8 +58,7 @@
         <div class = "icon" id = "flexitem3">
           <img src = "assets/about/portfolio_icon.png" alt = "portfolio_icon">
         </div>
-        <!-- </div> -->
-      </div>
+       </div>
     </section>
     <script type="text/javascript" src = "index.js"></script>
   </body>

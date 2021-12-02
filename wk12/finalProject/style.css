@@ -16,6 +16,30 @@
     "header one"
     "two three"
     "four five";
+    padding: 5vw;
+  }
+  #name
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 20vw;
+    height: 0vh;
+    font-size: 20px;
+  }
+  #note
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 70vw;
+    height: 10vh;
+    font-size: 14px;
+  }
+  .icon
+  {
+    margin: 4vw;
+    width: 2vw;
+    height: 4vw;
+    align-items: center;
   }
 }
 
@@ -37,6 +61,32 @@
     "two"
     "three"
     "four";
+    /* margin-left: 25vw; */
+  }
+  iframe
+  {
+    margin-left: 25vw;
+  }
+  #name
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 20vw;
+    font-size: 10px;
+  }
+  #note
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 70vw;
+    font-size: 10px;
+  }
+  .icon
+  {
+    margin: 20px;
+    width: 10px;
+    /* height: 10px; */
+    align-items: center;
   }
 }
 
@@ -89,6 +139,18 @@ section.sticky {
   padding: 0;
   margin: 0vw;
 }
+
+#heroimg
+{
+  width: 80vw;
+  height: 20vh;
+  /* clip image to the right position */
+  /* image is dependant on the current position it is in right now */
+  position: relative;
+  bottom: 400px;
+  right: 200px;
+}
+
 a:link
 {
   display: inline;
@@ -154,7 +216,7 @@ iframe
   /* div behind image is black and then you just change the opacity of the image */
   background-color: #659c97;
   transition: border-radius 0.5s;
-  width: 50.5vw;
+  width: 45vw;
 }
 .pimg:hover
 {
@@ -170,6 +232,27 @@ iframe
   opacity: .5;
   border: 4px #dac4a0 solid;
   border-radius: 100px;
+}
+.overlay{
+  z-index:1;
+  position: relative;
+  margin-top: -200px;
+  height: 85px;
+  width: 347px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+.overlay h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 23px;
+  color: white;
+  font-size: 2rem;
+}
+.project:hover .overlay {
+  opacity: .85;
 }
 
 .top img
@@ -200,14 +283,14 @@ iframe
   padding: 2vw;
   border-radius: 10px;
 }
-.icons
+/* .icon
 {
-  margin: 20vw;
-  width: 4vw;
+  margin: 4vw;
+  width: 2vw;
   height: 4vw;
   align-items: center;
-}
-#flex
+} */
+#flex, #displayflex
 {
   display: flex;
   /* display: inline; */
@@ -217,12 +300,70 @@ iframe
 {
   display: flex;
 }
-#topflex, #header
+#flexitem, #flexitem1
 {
   flex-grow: 2;
 
 }
-#flexitem, #flexitem1, #flexitem2, #flexitem3
+#flexitem2, #flexitem3, #flex1, #flex2
 {
   flex-grow: 2;
+}
+
+label
+{
+  font-family: serif;
+  margin: 20px;
+  font-size: 2vw;
+  display: inline;
+  margin-left: 4vw;
+  text-align: center;
+  color: #dac4a0;
+}
+input
+{
+  border-radius: 10px;
+  background-color: #eae3d8;
+  opacity: 50%;
+  margin: 2vw;
+  padding: 2vw;
+}
+/* #name
+{
+  border-radius: 10px;
+  background-color: #eae3d8;
+  width: 20vw;
+  height: 0vh;
+  font-size: 20px;
+}
+#note
+{
+  border-radius: 10px;
+  background-color: #eae3d8;
+  width: 70vw;
+  height: 10vh;
+  font-size: 14px;
+} */
+
+#projmodal
+{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: RGBA(0,0,0,0.5);
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+#modal{
+  display: none;
+  z-index: 1;
+  width: 500px;
+  height: auto;
+  position: fixed;
+  background-color: white;
+  padding: 50px;
+  top:100px;
+  left: calc(50vw - calc(500px / 2));
 }
