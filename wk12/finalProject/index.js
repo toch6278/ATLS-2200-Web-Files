@@ -1,28 +1,25 @@
 console.log("helloworld");
-
 let page = ["object.html", "text.html", "image.html", "resume.html", "about.html"];
-
 for (i = 0; i < document.getElementsByClassName("tabs").length; i++)
 {
   document.getElementsByClassName("tabs")[i].addEventListener ("click", newPage, false);
   document.getElementsByClassName("tabs")[i].id = i;
 }
-
 function newPage()
 {
-
 }
-
-let pics = ["accordionBookCover.jpg", "package.jpg", "posterMailerCover.jpg", "giphy.gif", "panda.gif", "haiku.gif"];
+// ---------------------------------------------------------------------------------------
+// CHANGE THIS ahhhhhhhhHSISDJHAKLSDJGKLJADFGKHLADJFGHKLSDFGKL
+// ADOHAKDFJGHKJDFGHSKLDHJF
+// ADKJFGHKAJDFGHKSLJDFGHKSLJDFGHKSJDFGHKSLJDFGKHJSDFGKHLSDFG CHANGE PICTURE NAMES
+// ---------------------------------------------------------------------------------------
+let pics = ["accordionBookCover.jpg", "posterMailerCover.jpg", "package.jpg", "giphy.gif"];
 let pic;
-
 for (i = 0; i < pics.length; i++)
 {
-  console.log(i);
-  document.getElementById('projects').innerHTML += "<div class = 'pimg'><img src = 'assets/text/" + pics[i]  + "' class = 'projectpic' id = 'pic" + i + "' /></div>";
-
+//   console.log(i);
+  document.getElementById('projects').innerHTML+= "<div class = 'pimg'><img src = 'assets/text/" + pics[i]  + "' class = 'projectpic' id = 'pic" + i + "' /></div>";
 }
-
 // let displaydetails = false;
 // document.getElementById('projects').addEventListener("click", showDetails);
 //
@@ -35,14 +32,12 @@ for (i = 0; i < pics.length; i++)
 //
 // function clickedOverlay()
 // {
-//   document.getElementById('details').style.display = "block";
+//   document.getElementById('details').style.display = "none";
 //   document.getElementById('detailoverlay').style.display = "none";
 //   displaydetails = false;
 // }
-
 //going to reference pages
 let sites = ["https://github.com/toch6278/ATLS-2200-Web-Files", "https://www.linkedin.com/in/tchew24/", "https://toch6278.myportfolio.com/work"];
-
 for (i = 1; i < document.getElementsByClassName("icon").length; i++)
 {
   document.getElementsByClassName("icon")[i].addEventListener ("click", iconClicked, false);
@@ -63,53 +58,58 @@ function iconClicked(e)
   }
   window.open(sites[ref] , '_blank');
   //get id that triggers the event
-
 }
-
 // --------------------------------------------------------------
 // separate modals
 let modal;
 let modalActive = false;
-
 //event listeners
-document.getElementById("projects").addEventListener("click", function(){
-    dispPg('projects');});
-document.getElementById("about").addEventListener("click", function() {dispPg('about');});
-
-
-for (var i = 0; i < document.getElementsByClassName('projmodal').length; i++) {
-  let proj = document.getElementsByClassName('projmodal')[i];
+// document.getElementById("projects").addEventListener("click", function(){
+//     dispPg('projects');});
+// document.getElementById("about").addEventListener("click", function() {dispPg('about');});
+// ---------------------------------------------------------------------------------------
+// WE WRORKED HERE
+// ---------------------------------------------------------------------------------------
+for (var i = 0; i < document.getElementsByClassName('projectpic').length; i++) {
+  let proj = document.getElementsByClassName('projectpic')[i];
+    // console.log("Working: " + proj);
     proj.addEventListener('click', function(){launchModal(this.getAttribute('id'))}, false);
-    console.log(i);
+    // console.log(i);
 }
-
 window.onClick = function(event) {
   if (event.target == modal) {
     modal.classList.add('disabled');
   }
 }
-
-
-typeIt();
-
+// typeIt();
 //functions
-
+// ---------------------------------------------------------------------------------------
+// WE WRORKED HERE
+// ---------------------------------------------------------------------------------------
 //manage project click to launch modal
 function launchModal(attribute){
-    modal = document.getElementsByClassName('projmodal')[attribute];
-    modal.classList.remove('disabled');
+    // modal = document.getElementsByClassName('projectpic')[attribute];
+    let modalNumber = attribute.slice(attribute.length - 1, attribute.length);
+    // console.log(modalNumber);
+    // modal.classList.remove('disabled');
+    document.getElementsByClassName('modal')[modalNumber].style.display = "block";
+    document.getElementsByClassName('projmodal')[0].style.display = "block";
+    document.getElementsByClassName('projmodal')[0].addEventListener('click', function(){closeModal(modalNumber)});
     modalActive = true;
-
-
     //alert('clicked ' + attribute);
 };
-
-function closeModal(){
-  modal.addEventListener('click', console.log('closing modal'));
-//   if(modalActive == true){
-//   console.log("closing modal");
+// ---------------------------------------------------------------------------------------
+// WE WRORKED HERE
+// ---------------------------------------------------------------------------------------
+function closeModal(modalNumber){
+//   modal.addEventListener('click', console.log('closing modal'));
+    document.getElementsByClassName('modal')[modalNumber].style.display = "none";
+    document.getElementsByClassName('projmodal')[0].style.display = "none";
+  if(modalActive == true){
+  console.log("closing modal");
 //   modal.classList.add('disabled');
-// }
+  modalActive = false;
+}
 }
 //manage menu selections from navigation
 function dispPg(pageName){
@@ -130,5 +130,5 @@ function dispPg(pageName){
       document.getElementById('projects').classList.remove('disabled');
     }
 }
-
+//  document.getElementById
 // -------------------------------------------------------------------------

@@ -2,11 +2,11 @@
   #ppic1 img{
     display:block;
   }
-
+​
   nav a{
     font-size: 20px;
   }
-
+​
   #projects
   {
     display: grid;
@@ -42,16 +42,16 @@
     align-items: center;
   }
 }
-
+​
 @media screen and (max-width:801px){
   #ppic1 img{
     /* display:none; */
   }
-
+​
   nav a{
     font-size: 15px;
   }
-
+​
   #projects{
     display: grid;
     grid-template-columns: 1fr;
@@ -89,7 +89,7 @@
     align-items: center;
   }
 }
-
+​
 body
 {
   background-color: #eae3d8;
@@ -139,18 +139,6 @@ section.sticky {
   padding: 0;
   margin: 0vw;
 }
-
-#heroimg
-{
-  width: 80vw;
-  height: 20vh;
-  /* clip image to the right position */
-  /* image is dependant on the current position it is in right now */
-  position: relative;
-  bottom: 400px;
-  right: 200px;
-}
-
 a:link
 {
   display: inline;
@@ -167,12 +155,12 @@ a:hover
 {
   color: #659c97;
 }
-
+​
 #activity
 {
   text-align: center;
 }
-
+​
 iframe
 {
   margin: 2vw;
@@ -202,15 +190,15 @@ iframe
   flex-grow: 1;
   flex-wrap: wrap;
 }
-
+​
 #projects img
 {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-
-
+​
+​
 .pimg
 {
   /* div behind image is black and then you just change the opacity of the image */
@@ -254,7 +242,7 @@ iframe
 .project:hover .overlay {
   opacity: .85;
 }
-
+​
 .top img
 {
   width: 10vw;
@@ -290,7 +278,7 @@ iframe
   height: 4vw;
   align-items: center;
 } */
-#flex, #displayflex
+#flex
 {
   display: flex;
   /* display: inline; */
@@ -300,16 +288,16 @@ iframe
 {
   display: flex;
 }
-#flexitem, #flexitem1
+#flex1, #flex2
 {
   flex-grow: 2;
-
+​
 }
-#flexitem2, #flexitem3, #flex1, #flex2
+#flexitem, #flexitem1, #flexitem2, #flexitem3
 {
   flex-grow: 2;
 }
-
+​
 label
 {
   font-family: serif;
@@ -344,8 +332,8 @@ input
   height: 10vh;
   font-size: 14px;
 } */
-
-#projmodal
+​
+.projmodal
 {
   display: none;
   width: 100vw;
@@ -356,7 +344,7 @@ input
   top: 0;
   left: 0;
 }
-#modal{
+.modal{
   display: none;
   z-index: 1;
   width: 500px;
