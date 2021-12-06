@@ -18,7 +18,7 @@ let pic;
 for (i = 0; i < pics.length; i++)
 {
 //   console.log(i);
-  document.getElementById('projects').innerHTML+= "<div class = 'pimg'><img src = 'assets/text/" + pics[i]  + "' class = 'projectpic' id = 'pic" + i + "' /></div>";
+  document.getElementById('projects').innerHTML+= "<div class = 'pimg'><img src = 'assets/text/" + pics[i]  + "' class = 'projectpic' id = 'pic" + i + "' /> <div class = 'overlay'> <h2> Overlay Text </h2></div></div>";
 }
 // let displaydetails = false;
 // document.getElementById('projects').addEventListener("click", showDetails);
@@ -93,42 +93,50 @@ function launchModal(attribute){
     // console.log(modalNumber);
     // modal.classList.remove('disabled');
     document.getElementsByClassName('modal')[modalNumber].style.display = "block";
+    document.getElementsByClassName('modal')[modalNumber].classList.toggle("openmodal");
     document.getElementsByClassName('projmodal')[0].style.display = "block";
-    document.getElementsByClassName('projmodal')[0].addEventListener('click', function(){closeModal(modalNumber)});
+    document.getElementsByClassName('projmodal')[0].addEventListener('click', closeModal);
+    // document.getElementById('proj1').addEventListener('click', closeModal);
     modalActive = true;
     //alert('clicked ' + attribute);
 };
 // ---------------------------------------------------------------------------------------
 // WE WRORKED HERE
 // ---------------------------------------------------------------------------------------
-function closeModal(modalNumber){
+function closeModal(e){
 //   modal.addEventListener('click', console.log('closing modal'));
-    document.getElementsByClassName('modal')[modalNumber].style.display = "none";
-    document.getElementsByClassName('projmodal')[0].style.display = "none";
+    if (e.target.id == "proj1")
+    {
+      document.getElementsByClassName('openmodal')[0].classList.toggle("openmodal");
+      document.getElementsByClassName('projmodal')[0].style.display = "none";
+      openmodal = false;
+    }
+
   if(modalActive == true){
   console.log("closing modal");
 //   modal.classList.add('disabled');
   modalActive = false;
 }
+  console.log(e.target.id);
 }
 //manage menu selections from navigation
-function dispPg(pageName){
-  console.log(pageName);
-  if(pageName=='about' && document.getElementById('projects').className == 'active'){
-    var element = document.getElementById("projects");
-    element.classList.remove("active");
-    document.getElementById('projects').classList.add('disabled');
-    document.getElementsByTagName('body')[0].style.backgroundColor = 'black';
-    document.getElementsByTagName('nav')[0].style.color = 'white';
-    document.getElementById('about').classList.add('active');
-  }else if(pageName=='projects' && document.getElementById('about').className == 'active'){
-      var element = document.getElementById("about");
-      element.classList.remove("active");
-      document.getElementById('project').classList.add('active');
-      document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
-      document.getElementsByTagName('nav')[0].style.color = 'black';
-      document.getElementById('projects').classList.remove('disabled');
-    }
-}
+// function dispPg(pageName){
+//   console.log(pageName);
+//   if(pageName=='about' && document.getElementById('projects').className == 'active'){
+//     var element = document.getElementById("projects");
+//     element.classList.remove("active");
+//     document.getElementById('projects').classList.add('disabled');
+//     document.getElementsByTagName('body')[0].style.backgroundColor = 'black';
+//     document.getElementsByTagName('nav')[0].style.color = 'white';
+//     document.getElementById('about').classList.add('active');
+//   }else if(pageName=='projects' && document.getElementById('about').className == 'active'){
+//       var element = document.getElementById("about");
+//       element.classList.remove("active");
+//       document.getElementById('project').classList.add('active');
+//       document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
+//       document.getElementsByTagName('nav')[0].style.color = 'black';
+//       document.getElementById('projects').classList.remove('disabled');
+//     }
+// }
 //  document.getElementById
 // -------------------------------------------------------------------------
