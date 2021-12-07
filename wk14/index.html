@@ -2,23 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> Week 14 - JSON </title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src = "index.js">
-
-    </script>
+    <title> P5JS </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   </head>
   <body>
-    <section>
-      <div>
-        <h1> Weather In <span id = "location"> </span> </h1>
-        <h2> Temperature is currently <span id = "tempf"> </span> </h2>
-      </div>
-      <div>
-        <h1> On <span id = "date"></span> </h1>
-        <h2> Sunrise is at <span id = "sunrise"> </span> </h2>
-        <h2> It will be <span id = "cond"> </span> </h2>
-      </div>
-    </section>
+    <h1> Welcome to my sketch </h1>
+    <div id = "sketch"></div>
+    <!-- can access variables in index.js from sketch.js because they are global variables -->
+    <script type = "text/javascript" src = "sketch.js"> </script>
+    <script type = "text/javascript" src = "index.js"> </script>
   </body>
 </html>
