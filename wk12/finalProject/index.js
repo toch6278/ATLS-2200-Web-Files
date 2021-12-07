@@ -8,17 +8,13 @@ for (i = 0; i < document.getElementsByClassName("tabs").length; i++)
 function newPage()
 {
 }
-// ---------------------------------------------------------------------------------------
-// CHANGE THIS ahhhhhhhhHSISDJHAKLSDJGKLJADFGKHLADJFGHKLSDFGKL
-// ADOHAKDFJGHKJDFGHSKLDHJF
-// ADKJFGHKAJDFGHKSLJDFGHKSLJDFGHKSJDFGHKSLJDFGKHJSDFGKHLSDFG CHANGE PICTURE NAMES
-// ---------------------------------------------------------------------------------------
+
 let pics = ["accordionBookCover.jpg", "posterMailerCover.jpg", "package.jpg", "giphy.gif"];
 let pic;
 for (i = 0; i < pics.length; i++)
 {
 //   console.log(i);
-  document.getElementById('projects').innerHTML+= "<div class = 'pimg'><img src = 'assets/text/" + pics[i]  + "' class = 'projectpic' id = 'pic" + i + "' /> <div class = 'overlay'> <h2> Overlay Text </h2></div></div>";
+  document.getElementById('projects').innerHTML+= "<div class = 'pimg'><img src = 'assets/text/" + pics[i]  + "' class = 'projectpic' id = 'pic" + i + "' /> <div class = 'overlay'> <h3> Text Projects </h3></div></div>";
 }
 // let displaydetails = false;
 // document.getElementById('projects').addEventListener("click", showDetails);

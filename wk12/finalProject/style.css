@@ -1,21 +1,24 @@
-@media screen and (min-width:800px){
-  #ppic1 img{
+@media screen and (min-width:800px)
+{
+  #ppic1 img
+  {
     display:block;
   }
 ​
-  nav a{
+  nav a
+  {
     font-size: 20px;
   }
 ​
   #projects
   {
-    display: grid;
-    grid-auto-rows: 500px;
+    /* display: grid; */
+    /* grid-auto-rows: 500px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
     "header one"
     "two three"
-    "four five";
+    "four five"; */
     padding: 5vw;
   }
   #name
@@ -43,24 +46,28 @@
   }
 }
 ​
-@media screen and (max-width:801px){
-  #ppic1 img{
+@media screen and (max-width:801px)
+{
+  #ppic1 img
+  {
     /* display:none; */
   }
 ​
-  nav a{
+  nav a
+  {
     font-size: 15px;
   }
 ​
-  #projects{
-    display: grid;
-    grid-template-columns: 1fr;
+  #projects
+  {
+    /* display: grid; */
+    /* grid-template-columns: 1fr;
     grid-template-areas:
     "header"
     "one"
     "two"
     "three"
-    "four";
+    "four"; */
     /* margin-left: 25vw; */
   }
   iframe
@@ -89,9 +96,8 @@
     align-items: center;
   }
 }
-​
-body
-{
+
+body {
   background-color: #eae3d8;
 }
 .top
@@ -112,7 +118,7 @@ h2
 {
   font-size: 5vw;
   display: inline;
-  /* margin: 25vw; */
+  margin: 25vw;
   text-align: center;
   color: #dac4a0;
   font-family: "Open+Sans";
@@ -206,7 +212,22 @@ iframe
   height: 100%;
 }
 ​
-​
+/* ​#pic1
+{
+  grid-area: header;
+}
+#pic2
+{
+  grid-area: one;
+}
+#pic3
+{
+  grid-area: two;
+}
+#pic4
+{
+  grid-area: three;
+} */
 .pimg
 {
   /* div behind image is black and then you just change the opacity of the image */
@@ -231,12 +252,12 @@ iframe
   border-radius: 100px;
 }
 
-.overlay{
+.overlay
+{
   z-index:1;
   position: relative;
-  margin-top: -200px;
   height: 85px;
-  width: 347px;
+  width: 53vw;
   opacity: 0;
   transition: .5s ease;
   background-color: black;
@@ -244,8 +265,9 @@ iframe
 .pimg:hover .overlay
 {
   opacity: 0.5;
+  margin-top: -200px;
 }
-.overlay h2{
+.overlay h3{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,13 +299,16 @@ iframe
 }
 .contact p
 {
-  background-color: #eae3d8;
-  font-size: 10px;
-  font-family: sans-serif;
-  opacity: 50%;
-  height: 10vh;
-  padding: 2vw;
-  border-radius: 10px;
+  /* background-color: #eae3d8; */
+  font-family: serif;
+  margin: 20px;
+  font-size: 2vw;
+  display: inline;
+  margin: 10vw 4vw 0vw 4vw;
+  text-align: center;
+  /* padding: 2px; */
+  /* border-radius: 10px; */
+  color: #dac4a0;
 }
 /* .icon
 {
@@ -292,7 +317,7 @@ iframe
   height: 4vw;
   align-items: center;
 } */
-#flex
+#displayflex, #flex
 {
   display: flex;
   /* display: inline; */
@@ -301,18 +326,18 @@ iframe
 #topflex
 {
   display: flex;
+  margin-top: 20px;
 }
 #flex1, #flex2
 {
   flex-grow: 2;
-​
 }
 #flexitem, #flexitem1, #flexitem2, #flexitem3
 {
   flex-grow: 2;
 }
 ​
-label
+/* label
 {
   font-family: serif;
   margin: 20px;
@@ -321,7 +346,7 @@ label
   margin-left: 4vw;
   text-align: center;
   color: #dac4a0;
-}
+} */
 input
 {
   border-radius: 10px;
@@ -330,7 +355,7 @@ input
   margin: 2vw;
   padding: 2vw;
 }
-/* #name
+#name
 {
   border-radius: 10px;
   background-color: #eae3d8;
@@ -338,6 +363,7 @@ input
   height: 0vh;
   font-size: 20px;
 }
+/*
 #note
 {
   border-radius: 10px;
@@ -345,7 +371,7 @@ input
   width: 70vw;
   height: 10vh;
   font-size: 14px;
-} */
+}*/
 ​
 .projmodal, #proj1
 {
@@ -368,6 +394,14 @@ input
   padding: 50px;
   top:100px;
   left: calc(50vw - calc(500px / 2));
+}
+.modal h3
+{
+  font-size: 5vw;
+  display: inline;
+  text-align: center;
+  color: #dac4a0;
+  font-family: "Open+Sans";
 }
 .openmodal
 {
