@@ -1,102 +1,4 @@
-@media screen and (min-width:800px)
-{
-  #ppic1 img
-  {
-    display:block;
-  }
 ​
-  nav a
-  {
-    font-size: 20px;
-  }
-​
-  #projects
-  {
-    /* display: grid; */
-    /* grid-auto-rows: 500px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "header one"
-    "two three"
-    "four five"; */
-    padding: 5vw;
-  }
-  #name
-  {
-    border-radius: 10px;
-    background-color: #eae3d8;
-    width: 20vw;
-    height: 0vh;
-    font-size: 20px;
-  }
-  #note
-  {
-    border-radius: 10px;
-    background-color: #eae3d8;
-    width: 70vw;
-    height: 10vh;
-    font-size: 14px;
-  }
-  .icon
-  {
-    margin: 4vw;
-    width: 2vw;
-    height: 4vw;
-    align-items: center;
-  }
-}
-​
-@media screen and (max-width:801px)
-{
-  #ppic1 img
-  {
-    /* display:none; */
-  }
-​
-  nav a
-  {
-    font-size: 15px;
-  }
-​
-  #projects
-  {
-    /* display: grid; */
-    /* grid-template-columns: 1fr;
-    grid-template-areas:
-    "header"
-    "one"
-    "two"
-    "three"
-    "four"; */
-    /* margin-left: 25vw; */
-  }
-  iframe
-  {
-    margin-left: 25vw;
-  }
-  #name
-  {
-    border-radius: 10px;
-    background-color: #eae3d8;
-    width: 20vw;
-    font-size: 10px;
-  }
-  #note
-  {
-    border-radius: 10px;
-    background-color: #eae3d8;
-    width: 70vw;
-    font-size: 10px;
-  }
-  .icon
-  {
-    margin: 20px;
-    width: 10px;
-    /* height: 10px; */
-    align-items: center;
-  }
-}
-
 body {
   background-color: #eae3d8;
 }
@@ -137,7 +39,7 @@ nav a
   padding: 1em;
   text-align: center;
 }
-section.sticky {
+.sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -212,22 +114,6 @@ iframe
   height: 100%;
 }
 ​
-/* ​#pic1
-{
-  grid-area: header;
-}
-#pic2
-{
-  grid-area: one;
-}
-#pic3
-{
-  grid-area: two;
-}
-#pic4
-{
-  grid-area: three;
-} */
 .pimg
 {
   /* div behind image is black and then you just change the opacity of the image */
@@ -255,20 +141,23 @@ iframe
 .overlay
 {
   z-index:1;
-  position: relative;
+  position: relative !important;
   height: 85px;
-  width: 53vw;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: black;
+  top: 1px;
+  position: absolute;
+  top: 50px;
 }
 .pimg:hover .overlay
 {
   opacity: 0.5;
-  margin-top: -200px;
 }
 .overlay h3{
   display: flex;
+  margin-top: -350px;
   justify-content: center;
   align-items: center;
   padding-top: 23px;
@@ -276,7 +165,7 @@ iframe
   font-size: 2rem;
 }
 .project:hover .overlay {
-  opacity: .85;
+  opacity: 1;
 }
 ​
 .top img
@@ -374,8 +263,78 @@ input
   height: 10vh;
   font-size: 14px;
 }*/
+
+  #ppic1 img
+  {
+    display:block;
+  }
 ​
-.projmodal, #proj1
+  nav a
+  {
+    font-size: 20px;
+  }
+
+  #name
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 20vw;
+    height: 0vh;
+    font-size: 20px;
+  }
+  #note
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 70vw;
+    height: 10vh;
+    font-size: 14px;
+  }
+  .icon
+  {
+    margin: 4vw;
+    width: 2vw;
+    height: 4vw;
+    align-items: center;
+  }
+
+/* #pic0
+{
+  grid-area: header;
+}
+#pic1
+{
+  grid-area: one;
+}
+#pic2
+{
+  grid-area: two;
+}
+#pic3
+{
+  grid-area: three;
+} */
+​
+#projectpic
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#projects
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 50vh;
+  grid-column-gap: 50px;
+  grid-row-gap:50px;
+  grid-template-areas:
+  "header one"
+  "two three";
+  padding: 5vw;
+}
+
+.projmodal
 {
   display: none;
   width: 100vw;
@@ -409,3 +368,53 @@ input
 {
   display: none;
 }
+​
+/* @media screen and (max-width:801px)
+{
+  #ppic1 img
+  {
+     display:none;
+  }
+​
+  nav a
+  {
+    font-size: 15px;
+  }
+​
+  #projects
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "one"
+    "two"
+    "three";
+     margin-left: 25vw;
+  }
+  iframe
+  {
+    margin-left: 25vw;
+  }
+  #name
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 20vw;
+    font-size: 10px;
+  }
+  #note
+  {
+    border-radius: 10px;
+    background-color: #eae3d8;
+    width: 70vw;
+    font-size: 10px;
+  }
+  .icon
+  {
+    margin: 20px;
+    width: 10px;
+   height: 10px;
+    align-items: center;
+  }
+} */

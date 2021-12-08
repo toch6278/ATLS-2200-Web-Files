@@ -1,20 +1,52 @@
 console.log("helloworld");
-let page = ["object.html", "text.html", "image.html", "resume.html", "about.html"];
-for (i = 0; i < document.getElementsByClassName("tabs").length; i++)
+// let page = ["object.html", "text.html", "image.html", "resume.html", "about.html"];
+// for (i = 0; i < document.getElementsByClassName("tabs").length; i++)
+// {
+//   document.getElementsByClassName("tabs")[i].addEventListener ("click", newPage, false);
+//   document.getElementsByClassName("tabs")[i].id = i;
+// }
+// function newPage()
+// {
+// }
+
+
+//going to reference pages
+let sites = ["https://github.com/toch6278/ATLS-2200-Web-Files", "https://github.com/toch6278/ATLS-2200-Web-Files", "https://www.linkedin.com/in/tchew24/", "https://toch6278.myportfolio.com/work"];
+for (i = 1; i < document.getElementsByClassName("icon").length; i++)
 {
-  document.getElementsByClassName("tabs")[i].addEventListener ("click", newPage, false);
-  document.getElementsByClassName("tabs")[i].id = i;
+  document.getElementsByClassName("icon")[i].addEventListener("click", iconClicked, false);
+  //getting the id of the image
+  // document.getElementsByClassName("icon")[i].id = i;
+  console.log(sites[i]);
 }
-function newPage()
+function iconClicked(e)
 {
+  console.log("Im in");
+  // alert("You'll be taken to the following page...");
+  //Resource: used to change between different htmls and open in the same window or a separate window
+  // https://developer.mozilla.org/en-US/docs/Web/API/Window/open
+  if(e.target.tagName == "IMG"){
+    //click on the container whihc is the div
+    ref = e.target.parentNode.id;
+    ref = ref.slice(ref.length - 1, ref.length);
+  }else{
+    ref = e.target.id;
+    ref = ref.slice(ref.length - 1, ref.length);
+  }
+
+  window.open(sites[ref], '_blank');
+  //get id that triggers the event
 }
 
+//--------------------------------------------
+// GRID FILLING PICS
 let pics = ["accordionBookCover.jpg", "posterMailerCover.jpg", "package.jpg", "giphy.gif"];
-let pic;
 for (i = 0; i < pics.length; i++)
 {
 //   console.log(i);
-  document.getElementById('projects').innerHTML+= "<div class = 'pimg'><img src = 'assets/text/" + pics[i]  + "' class = 'projectpic' id = 'pic" + i + "' /> <div class = 'overlay'> <h3> Text Projects </h3></div></div>";
+  document.getElementById('projects').innerHTML+= "<div class = 'pimg'><img src = 'assets/text/" + pics[i]
+  + "' class = 'projectpic' id = 'pic" + i + "' /> <div class = 'overlay'> <h3> Text Projects </h3></div></div>";
+  // document.getElementById('projects').innerHTML+= "<div class = 'pimg'><img src = 'assets/text/" + pics[i]  + "' class = 'projectpic' id = 'pic" + i + "' /> ";
 }
 // let displaydetails = false;
 // document.getElementById('projects').addEventListener("click", showDetails);
@@ -32,29 +64,8 @@ for (i = 0; i < pics.length; i++)
 //   document.getElementById('detailoverlay').style.display = "none";
 //   displaydetails = false;
 // }
-//going to reference pages
-let sites = ["https://github.com/toch6278/ATLS-2200-Web-Files", "https://www.linkedin.com/in/tchew24/", "https://toch6278.myportfolio.com/work"];
-for (i = 1; i < document.getElementsByClassName("icon").length; i++)
-{
-  document.getElementsByClassName("icon")[i].addEventListener ("click", iconClicked, false);
-  //getting the id of the image
-  document.getElementsByClassName("icon")[i].id = i;
-  console.log(sites[i]);
-}
-function iconClicked(e)
-{
-  // alert("You'll be taken to the following page...");
-  //Resource: used to change between different htmls and open in the same window or a separate window
-  // https://developer.mozilla.org/en-US/docs/Web/API/Window/open
-  if(e.target.tagName == "IMG"){
-    //click on the container whihc is the div
-    ref = e.target.parentNode.id;
-  }else{
-    ref = e.target.id;
-  }
-  window.open(sites[ref] , '_blank');
-  //get id that triggers the event
-}
+
+
 // --------------------------------------------------------------
 // separate modals
 let modal;
