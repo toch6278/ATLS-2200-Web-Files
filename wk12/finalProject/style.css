@@ -1,5 +1,5 @@
-​
-body {
+body
+{
   background-color: #eae3d8;
 }
 .top
@@ -65,9 +65,31 @@ a:hover
 {
   color: #659c97;
 }
+#phrase1
+{
+  color: #398b85;
+  margin-top: 8vw;
+  margin-bottom: -10vw;
+  font-family: "Open Sans";
+  font-size: 5vw;
+}
+#phrase2
+{
+  color: #b38537;
+  font-family: "Open Sans";
+  font-size: 9vw; 
+}
 #heroimg
 {
-  opacity: 0.5;
+  background-color: black;
+  opacity: 0.35;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  bottom: 120px;
+  /* right: 100px; */
+  margin: -16vw 0vw 0vw 0vw;
+  object-position: center;
 }​
 
 #activity
@@ -119,8 +141,7 @@ iframe
   /* div behind image is black and then you just change the opacity of the image */
   background-color: #659c97;
   transition: border-radius 0.5s;
-  width: 45vw;
-  height: 60px;
+  /* height: 60px; */
 }
 .pimg:hover
 {
@@ -129,7 +150,11 @@ iframe
 .pimg img{
   /* write transition on default state */
   /* only writing transition specificity for opacity  */
+  width: 100%;
+  height: 100%;
   transition: opacity 0.5s ease-in, border-radius 0.5s;
+  object-position: center;
+  object-fit: cover;
 }
 .pimg:hover img, iframe:hover{
   /* 50% opaque/transparent */
@@ -142,22 +167,23 @@ iframe
 {
   z-index:1;
   position: relative !important;
-  height: 85px;
+  height: 87px;
   width: 100%;
+  margin-left: 5px;
   opacity: 0;
   transition: .5s ease;
-  background-color: black;
+  background-color: #88aeac;
   top: 1px;
   position: absolute;
   top: 50px;
 }
 .pimg:hover .overlay
 {
-  opacity: 0.5;
+  opacity: 1;
 }
 .overlay h3{
   display: flex;
-  margin-top: -350px;
+  margin-top: -250px;
   justify-content: center;
   align-items: center;
   padding-top: 23px;
@@ -199,6 +225,10 @@ iframe
   /* border-radius: 10px; */
   color: #dac4a0;
 }
+.contact input
+{
+  margin-left: 4vw;
+}
 /* .icon
 {
   margin: 4vw;
@@ -211,6 +241,7 @@ iframe
   display: flex;
   /* display: inline; */
   /* margin-left: 5vw;  */
+  margin-bottom: 10vw;
 }
 #topflex
 {
@@ -220,6 +251,7 @@ iframe
 #flex1, #flex2
 {
   flex-grow: 2;
+  margin-left: 5px;
 }
 #flexitem, #flexitem1, #flexitem2, #flexitem3
 {
@@ -241,28 +273,9 @@ input
   border-radius: 10px;
   background-color: #eae3d8;
   opacity: 50%;
-  margin: 2vw;
-  padding: 2vw;
+  margin-left: 10vw;
+  padding: 5vw;
 }
-#name
-{
-  border-radius: 10px;
-  background-color: #eae3d8;
-  width: 20vw;
-  height: 5px;
-  font-size: 20px;
-  margin: 10px;
-  padding: 2rem;
-}
-/*
-#note
-{
-  border-radius: 10px;
-  background-color: #eae3d8;
-  width: 70vw;
-  height: 10vh;
-  font-size: 14px;
-}*/
 
   #ppic1 img
   {
@@ -279,8 +292,9 @@ input
     border-radius: 10px;
     background-color: #eae3d8;
     width: 20vw;
-    height: 0vh;
+    height: 5vh;
     font-size: 20px;
+    margin-bottom: 2vw;
   }
   #note
   {
@@ -328,9 +342,6 @@ input
   grid-auto-rows: 50vh;
   grid-column-gap: 50px;
   grid-row-gap:50px;
-  grid-template-areas:
-  "header one"
-  "two three";
   padding: 5vw;
 }
 
