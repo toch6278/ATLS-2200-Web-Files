@@ -42,7 +42,7 @@ for (i = 0; i < pics.length; i++)
   // document.getElementById('projects').innerHTML+= "<div class = 'pimg'><img src = 'assets/text/" + pics[i]  + "' class = 'projectpic' id = 'pic" + i + "' /> ";
   if (i == pics.length - 1)
   {
-    document.getElementById('projects').innerHTML += "<div class = 'pimg'><iframe width= '700' height= '400' src = '/assets/TorshawnaChew_MovingImage.mp4'></iframe><div class='overlay'><h3> Timeline Animation - Image Project 2</h3></div></div>";
+    document.getElementById('projects').innerHTML += "<div class = 'pimg'><iframe width= '700' height= '400' src = 'assets/TorshawnaChew_MovingImage.mp4'></iframe><div class='overlay'><h3> Timeline Animation - Image Project 2</h3></div></div>";
   }
 }
 
