@@ -32,7 +32,7 @@ function iconClicked(e)
 
 //--------------------------------------------
 // GRID FILLING PICS
-let pics = ["accordionBookCover.jpg", "posterMailerCover.jpg", "package.jpg", "giphy.gif"];
+let pics = ["accordionBookCover.JPG", "posterMailerCover.JPG", "package.JPG", "giphy.gif"];
 let titles = ["Expressive Booklet - Text Project 1", "Poster Mailer - Text Project 2", "Personal Packaging - Text Project 3", "Web AR - Image Final Project"];
 for (i = 0; i < pics.length; i++)
 {
